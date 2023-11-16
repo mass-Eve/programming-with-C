@@ -48,7 +48,3 @@ do {
 
 Compound Statements ~
 The statements written inside a block of curly-brackets are known as Compound statements. Either all the content that is written inside a curly-brackets block will execute, or nothing will execute. 
-
-```
-print("My name is ankur")
-```
