@@ -20,31 +20,31 @@ Initialization | Condition | Updation | Body
 
 Let's have a look at the syntax of each loop.
 
-        Syntax of a  for-loop
+Syntax of a  for-loop
 
-for (initialization, condition, updation)
-{
-    body
-}
+    for (initialization, condition, updation)
+    {
+        body
+    }
 
-        Syntax of a while-loop
+Syntax of a while-loop
 
-initialization
-while (condition)
-{
-    body
-    updation
-}
+    initialization
+    while (condition)
+    {
+        body
+        updation
+    }
 
 while it may seem that the individual components of a loop are occuring at different positions, but the flow of execution is same, except in a do-while loop.
 
-        Syntax of a do-while loop
+Syntax of a do-while loop
 
-intialization
-do {
-    body
-    updation
-} while (condition);
+    intialization
+    do {
+        body
+        updation
+    } while (condition);
 
 Compound Statements ~
 The statements written inside a block of curly-brackets are known as Compound statements. Either all the content that is written inside a curly-brackets block will execute, or nothing will execute. 
