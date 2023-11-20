@@ -7,7 +7,7 @@ void main ()
 {
     int i, n;
 
-    printf("Enter the last term here:");
+    printf("Enter the value of n here:");
     scanf("%d", &n);
 
     for (i=1; i <= n; i++)
