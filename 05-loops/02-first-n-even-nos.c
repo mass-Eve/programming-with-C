@@ -5,16 +5,16 @@
 
 void main ()
 {
-    int n;
+    int i, n;
 
-    printf("Enter the total no. of terms here:");
+    printf("Enter the last term here:");
     scanf("%d", &n);
 
     for (i=1; i <= n; i++)
     {
-        if (i%2==0)
+        if (i % 2 == 0)
         {
-            printf("%d", i)
+            printf("%d, ", i);
         }
     }
 
