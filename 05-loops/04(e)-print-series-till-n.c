@@ -1,5 +1,7 @@
-// WAP to print the first n natural numbers.
+// WAP to print the following series of numbers ~
+    // 
 
+    
 #include<stdio.h>
 // #include<conio.h>
 
@@ -12,8 +14,8 @@ void main ()
 
     for (i=1; i <= n; i++)
     {
-        printf("%d", i);
+        
     }
 
     // getch();
-}
+} 
