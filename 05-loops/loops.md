@@ -22,19 +22,19 @@ Initialization | Condition | Updation | Body
 
 * Syntax of a for-loop
 
-    for (initialization, condition, updation)
-    {
-        body
-    }
+        for (initialization, condition, updation)
+        {
+            body
+        }
 
 * Syntax of a while-loop
 
-    initialization
-    while (condition)
-    {
-        body
-        updation
-    }
+        initialization
+        while (condition)
+        {
+            body
+            updation
+        }
 
 while it may seem that the individual components of a loop are occuring at different positions, but the flow of execution is same, except in a do-while loop.
 
