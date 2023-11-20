@@ -40,11 +40,11 @@ while it may seem that the individual components of a loop are occuring at diffe
 
 * Syntax of a do-while loop
 
-    intialization
-    do {
-        body
-        updation
-    } while (condition);
+        intialization
+        do {
+            body
+            updation
+        } while (condition);
 
 * Compound Statements ~
 The statements written inside a block of curly-brackets are known as Compound statements. Either all the content that is written inside a curly-brackets block will execute, or nothing will execute. 
