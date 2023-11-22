@@ -1,4 +1,4 @@
-// WAP to print the following series of numbers ~
+// WAP to print the sum of the following series of numbers ~
     // 7, 26, 63, 124, ................. , n
 
 

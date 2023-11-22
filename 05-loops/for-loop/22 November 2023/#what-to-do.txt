@@ -1,0 +1,4 @@
+In all of these programs, you have to calculate the sum of the serieses. 
+But this time, with a catch. 
+
+You have to make it sure that all the numbers coming on even-index-positions should be subtracted and all the numbers coming on the odd-index-positions should be added. And all of this should be done in a single sum variable.

@@ -1,4 +1,4 @@
-// WAP to print the following series of numbers ~
+// WAP to print the sum of the following series of numbers ~
     // 1/2 , 3/4 , 5/6 , .......... , n
 
 #include<stdio.h>

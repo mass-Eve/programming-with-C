@@ -1,5 +1,5 @@
-// WAP to print fibonacci sequence
-        // 0, 1, 1, 2, 3, 5, 8, 13, 21
+                // 0, 1, 1, 2, 3, 5, 8, 13, 21
+                
 #include<stdio.h>
 // #include<conio.h>
 

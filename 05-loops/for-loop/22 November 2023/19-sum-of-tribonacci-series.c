@@ -1,5 +1,4 @@
-// WAP to print the tribonaci sequence for a specified value of n.
-        // 0, 0, 1, 1, 2, 4, 7, 13, 24, 44, ......., n
+                // 0, 0, 1, 1, 2, 4, 7, 13, 24, 44, ......., n
 
 #include<stdio.h>
 // #include<conio.h>

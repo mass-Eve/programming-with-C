@@ -1,32 +1,31 @@
-// WAP to print the following series of numbers ~
-    // 2, 5, 10, 17, ................. , n
+                // 1, 4, 7, 10, ................... , n
 
 #include<stdio.h>
 // #include<conio.h>
 
 void main ()
 {
-    int i, n, pt, sum = 0;
+    int i, n, a, nt, sum = 0;
 
     printf("Enter the total no. of terms here:");
     scanf("%d", &n);
-    
-    pt = 2;
 
-    for (i = 1; i <= n; ++i)
+    for (i=1; i <= n; i++)
     {
+        // aN = a + (n-1)*d
+        a = 1;
+        nt = a + (i-1)*3 ;
+        printf("%d, ", nt);
+        // sum += nt;
+
         if (i % 2 == 0){
-            sum -= pt;
+            sum -= nt;
         }
         else{
-            sum += pt;
+            sum += nt;
         }
 
-        printf("%d, ", pt);
-
-        pt += 2*i + 1 ;
     }
-
     printf("The sum of this series upto n terms is: %d", sum);
 
     // getch();

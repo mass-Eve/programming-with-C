@@ -1,5 +1,4 @@
-// WAP to print the sum of first n-natural nos.
-        // 1, 2, 3, 4, 5
+                        // 1, 2, 3, 4, 5, ......., n
 
 #include<stdio.h>
 // #include<conio.h>

@@ -1,5 +1,4 @@
-// WAP to print the following series of numbers ~
-// 7, 26, 63, 124, ................. , n
+                // 7, 26, 63, 124, ................. , n
 
 #include <stdio.h>
 // #include<conio.h>

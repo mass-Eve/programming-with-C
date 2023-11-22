@@ -1,6 +1,5 @@
-// WAP to print the following series of numbers ~
+// WAP to print the sum of the following series of numbers ~
     // 1, 4, 7, 10, ................... , n
-    // Clearly, it is an AP
 
 #include<stdio.h>
 // #include<conio.h>

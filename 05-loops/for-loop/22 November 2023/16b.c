@@ -1,5 +1,4 @@
-// WAP to print the sum of the following series of numbers ~
-    // 2, 5, 10, 17, ................. , n
+                // 2, 5, 10, 17, ................. , n
 
 #include<stdio.h>
 // #include<conio.h>
@@ -15,7 +14,13 @@ void main ()
 
     for (i = 1; i <= n; ++i)
     {
-        sum += pt;
+        if (i % 2 == 0){
+            sum -= pt;
+        }
+        else{
+            sum += pt;
+        }
+
         printf("%d, ", pt);
 
         pt += 2*i + 1 ;
