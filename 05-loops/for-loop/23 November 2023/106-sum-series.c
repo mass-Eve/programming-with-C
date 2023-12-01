@@ -1,5 +1,5 @@
 // WAP to print the the sum of the following series ~
-                // 1 + x^2 + x^9 + x^28 + x^65 + ....... + upto x^n
+                // 1 + x^3 + x^8 + x^15 + x^24 + ....... + upto x^n
 
 #include<stdio.h>
 // #include<conio.h>
@@ -16,7 +16,7 @@ void main()
 
     for (i=1; i <= n; i++)
     {
-        sum += pow(x, (i*i*i + 1));
+        sum += pow(x, i*(i+2));
     }
     printf("The sum of this series is: %d", sum);
 
@@ -25,28 +25,28 @@ void main()
 
 
 /*
-                1 + x^2 + x^9 + x^28 + x^65 + ....... + upto x^n
+            1 + x^3 + x^8 + x^15 + x^24 + ....... + upto x^n
 
-                0    1     2     3      4
+            0    1     2     3      4
 
-            powers --> 2, 9, 28, 65
+            powers --> 3, 8, 15, 24
 
         x = 2       n = 3
             + 1 
 
         i = 1       
-                pow(2, (i*i*i + 1))       >>> for pow(3) = 2^2 + 1 == 5
+                pow(2, (i+2))       for pow(3) >>> 2^3 = 1 + 8 == 9
 
 
         i = 2       
-                pow(2, (i*i*i + 1))       >>> for pow(9) = 2^9 + 5 == 517
+                pow(2, (i+2))       for pow(8) >>> 2^8 = 9 + 256 = 265
 
 
         i = 3       
-                pow(2, (i*i*i + 1))       >>> for pow(28) = 2^28 + 517 == 268435973
+                pow(2, (i+2))       for pow(15) >>> 2^15 = 265 + 32768 = 33033
 
 
         i = 4       
-                pow(2, (i*i*i + 1))       >>> for pow(28) = 2^65 + 268435970 == 3.689348814768754e+19
+                pow(2, (i+2))       for pow(24) >>> 2^24 = 33033 + 16777216 == 16810249
 
 */
