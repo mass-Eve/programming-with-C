@@ -1,45 +1,52 @@
 // WAP to print the the sum of the following series ~
-// 1 + x^3 + x^5 + x^7 + x^9 + ....... + upton x^n
+                // 1 + x^2 + x^9 + x^28 + x^65 + ....... + upto x^n
 
-#include <stdio.h>
+#include<stdio.h>
 // #include<conio.h>
-#include <math.h>
+#include<math.h>
 
 void main()
 {
-    int i, n, sum = 0, x;
-    printf("Enter n: ");
+    int sum = 1, i, n, x;
+    printf("Enter no of terms, n:");
     scanf("%d", &n);
 
-    printf("Enter x: ");
+    printf("Enter x:");
     scanf("%d", &x);
 
-    for (i = 1; i <= n; i++)
+    for (i=1; i <= n; i++)
     {
-        sum += pow(x, (i*2 + 1));
+        sum += pow(x, (i*i*i + 1));
     }
-    printf("Sum = %d", sum);
+    printf("The sum of this series is: %d", sum);
+
+    // getch();
 }
 
-/*                  Working
 
-        let n == 4 and x = 2
-            series will become -> 1 + 2^3 + 2^5 + 2^7 + 2^9
+/*
+                1 + x^2 + x^9 + x^28 + x^65 + ....... + upto x^n
 
-    i == 1;
-            sum = 0 + pow(2, 1*2+1)
-        ==>    sum = 0 + pow(2, 3)          == 8
+                0    1     2     3      4
 
-    i == 2;
-            sum = 8 + pow(2, 2*2+1)
-        ==>    sum = 8 + pow(2, 5)          == 40
+            powers --> 2, 9, 28, 65
 
-    i == 3;
-            sum = 40 + pow(2, 3*2+1)
-        ==>    sum = 40 + pow(2, 7)          == 168
+        x = 2       n = 3
+            + 1 
 
-    i == 4;
-            sum = 168 + pow(2, 4*2+1)
-        ==>    sum = 168 + pow(2, 9)          == 680
+        i = 1       
+                pow(2, (i*i*i + 1))       >>> for pow(3) = 2^2 + 1 == 5
+
+
+        i = 2       
+                pow(2, (i*i*i + 1))       >>> for pow(9) = 2^9 + 5 == 517
+
+
+        i = 3       
+                pow(2, (i*i*i + 1))       >>> for pow(28) = 2^28 + 517 == 268435973
+
+
+        i = 4       
+                pow(2, (i*i*i + 1))       >>> for pow(28) = 2^65 + 268435970 == 3.689348814768754e+19
 
 */
