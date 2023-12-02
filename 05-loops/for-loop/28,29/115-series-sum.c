@@ -1,5 +1,5 @@
 // WAP to print the the sum of the following series ~
-// 1 - x^2 + x^3 - x^4 + ....... + upton x^n
+// 1 + x^1 + x^4 + x^7 + x^16 + ....... + upto x^n
 
 #include <stdio.h>
 // #include<conio.h>
@@ -7,7 +7,7 @@
 
 void main()
 {
-    int sum = 1, i, n, x;
+    int sum = 1, i, n, x, power;
     printf("Enter no of terms, n:");
     scanf("%d", &n);
 
@@ -16,14 +16,20 @@ void main()
 
     for (i = 1; i <= n; i++)
     {
+        // sum += pow(x, (i*i + 1));
+
         if (i % 2 == 0)
         {
-            sum += pow(x, i + 1);
+            power = pow(2, i);
         }
         else
         {
-            sum -= pow(x, i + 1);
+            power = pow(2, i) - 1;
         }
+        if (i % 2 == 0)
+            sum += pow(x, power);
+        else
+            sum -= pow(x, power);
     }
     printf("The sum of this series is: %d", sum);
 
