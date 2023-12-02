@@ -12,7 +12,7 @@ void main()
 
     int a1 = 0, a2 = -1, a3 = 1;
 
-    for (i=1; i <= n; i++)
+    for (i = 1; i <= n; i++)
     {
         pt = a1 + a2 + a3;
         printf("%d, ", pt);

@@ -1,6 +1,6 @@
-                        // 1, 2, 3, 4, 5, ......., n
+// 1, 2, 3, 4, 5, ......., n
 
-#include<stdio.h>
+#include <stdio.h>
 // #include<conio.h>
 
 void main()
@@ -9,12 +9,14 @@ void main()
     printf("Enter no of terms, n:");
     scanf("%d", &n);
 
-    for (i=1; i <= n; i++)
+    for (i = 1; i <= n; i++)
     {
-        if (i % 2 == 0){
+        if (i % 2 == 0)
+        {
             sum -= i;
-        } 
-        else{
+        }
+        else
+        {
             sum += i;
         }
     }

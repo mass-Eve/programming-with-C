@@ -1,6 +1,6 @@
-                // 0, 0, 1, 1, 2, 4, 7, 13, 24, 44, ......., n
+// 0, 0, 1, 1, 2, 4, 7, 13, 24, 44, ......., n
 
-#include<stdio.h>
+#include <stdio.h>
 // #include<conio.h>
 
 void main()
@@ -11,14 +11,16 @@ void main()
 
     int a1 = 0, a2 = -1, a3 = 1;
 
-    for (i=1; i <= n; i++)
+    for (i = 1; i <= n; i++)
     {
         pt = a1 + a2 + a3;
 
-        if (i % 2 == 0){
+        if (i % 2 == 0)
+        {
             sum -= pt;
         }
-        else{
+        else
+        {
             sum += pt;
         }
 

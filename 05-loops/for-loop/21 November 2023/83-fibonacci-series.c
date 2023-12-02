@@ -11,7 +11,7 @@ void main()
 
     int a1 = -1, a2 = 1;
 
-    for (i=1; i <= n; i++)
+    for (i = 1; i <= n; i++)
     {
         pt = a1 + a2;
         printf("%d, ", pt);
