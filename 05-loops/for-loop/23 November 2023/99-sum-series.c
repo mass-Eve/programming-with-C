@@ -7,7 +7,7 @@
 
 void main()
 {
-    int i, n, sum = 0, x;
+    int i, n, sum = 1, x;
     printf("Enter n: ");
     scanf("%d", &n);
 
@@ -27,19 +27,19 @@ void main()
             series will become -> 1 + 2^3 + 2^5 + 2^7 + 2^9
 
     i == 1;
-            sum = 0 + pow(2, 1*2+1)
-        ==>    sum = 0 + pow(2, 3)          == 8
+            sum = 1 + pow(2, 1*2+1)
+        ==>    sum = 1 + pow(2, 3)          == 9
 
     i == 2;
-            sum = 8 + pow(2, 2*2+1)
-        ==>    sum = 8 + pow(2, 5)          == 40
+            sum = 9 + pow(2, 2*2+1)
+        ==>    sum = 9 + pow(2, 5)          == 41
 
     i == 3;
-            sum = 40 + pow(2, 3*2+1)
-        ==>    sum = 40 + pow(2, 7)          == 168
+            sum = 41 + pow(2, 3*2+1)
+        ==>    sum = 41 + pow(2, 7)          == 169
 
     i == 4;
-            sum = 168 + pow(2, 4*2+1)
-        ==>    sum = 168 + pow(2, 9)          == 680
+            sum = 169 + pow(2, 4*2+1)
+        ==>    sum = 169 + pow(2, 9)          == 681
 
 */

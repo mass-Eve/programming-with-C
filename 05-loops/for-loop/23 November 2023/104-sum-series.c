@@ -1,9 +1,9 @@
 // WAP to print the the sum of the following series ~
-                // 1 + x^1 + x^4 + x^7 + x^16 + ....... + upto x^n
+// 1 + x^1 + x^4 + x^7 + x^16 + ....... + upto x^n
 
-#include<stdio.h>
+#include <stdio.h>
 // #include<conio.h>
-#include<math.h>
+#include <math.h>
 
 void main()
 {
@@ -14,24 +14,24 @@ void main()
     printf("Enter x:");
     scanf("%d", &x);
 
-    for (i=1; i <= n; i++)
+    for (i = 1; i <= n; i++)
     {
         // sum += pow(x, (i*i + 1));
 
-        if (i % 2 == 0){
+        if (i % 2 == 0)
+        {
             power = pow(2, i);
         }
-        else{
+        else
+        {
             power = pow(2, i) - 1;
         }
         sum += pow(x, power);
-
     }
     printf("The sum of this series is: %d", sum);
 
     // getch();
 }
-
 
 /*
                 1 + x^1 + x^4 + x^7 + x^16 + x^31 ....... + upto x^n
@@ -39,7 +39,7 @@ void main()
                 0    1     2     3      4
 
             if (i % 2 == 0){
-                power = pow(2, i)  
+                power = pow(2, i)
             }
             else {
                 power = pow(2, i) - 1
@@ -53,7 +53,7 @@ void main()
         i = 4      >>> power = 2^4 - 0 == 16
 
         x = 2       n = 3
-            + 1 
+            + 1
 
         i = 1;
                 n = 1 ; sum = 1 + 2^1 = 3

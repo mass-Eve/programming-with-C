@@ -1,9 +1,9 @@
 // WAP to print the the sum of the following series ~
-                // 1 + x^8 + x^13 + x^18 + x^23 + ....... + upto x^n
+// 1 + x^8 + x^13 + x^18 + x^23 + ....... + upto x^n
 
-#include<stdio.h>
+#include <stdio.h>
 // #include<conio.h>
-#include<math.h>
+#include <math.h>
 
 void main()
 {
@@ -14,7 +14,7 @@ void main()
     printf("Enter x:");
     scanf("%d", &x);
 
-    for (i=1; i <= n; i++)
+    for (i = 1; i <= n; i++)
     {
         sum += pow(x, power);
         power += ip;
@@ -24,7 +24,6 @@ void main()
     // getch();
 }
 
-
 /*
                 1 + x^8 + x^13 + x^18 + x^23 ....... + upto x^n
 
@@ -33,9 +32,9 @@ void main()
             powers --> 8, 13, 18, 23
 
         x = 2       n = 3
-            + 1 
+            + 1
 
-        i = 1       >>> power = 8 
+        i = 1       >>> power = 8
                 >>> sum += pow(2, 8) + 1 = 257
                     >>> power = 8 + 5 = 13
 

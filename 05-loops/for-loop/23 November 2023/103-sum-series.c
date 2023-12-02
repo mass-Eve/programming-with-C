@@ -14,9 +14,9 @@ void main()
     printf("Enter x:");
     scanf("%d", &x);
 
-    for (i=2; i <= n; i++)
+    for (i=1; i <= n; i++)
     {
-        sum += pow(x, (i*i*i - 1));
+        sum += pow(x, ((i+1)*(i+1)*(i+1) - 1));
     }
     printf("The sum of this series is: %d", sum);
 
@@ -25,20 +25,21 @@ void main()
 
 
 /*
-                1 + x^7 + x^26 + x^63 + x^124 + ....... + upto x^n
+                    WORKING
 
-            powers --> 0, 2, 5, 10, 17
+        Let x == 2 and n == 2
 
-        i = 2      n >>> i * i * i - 1 == 7 
-        i = 3      n >>> i * i * i - 1 == 26
-        i = 4      n >>> i * i * i - 1 == 63
+    i = 1;
+            sum = 1 + pow(2, (1+1)*(1+1)*(1+1) - 1)
+            sum = 1 + pow(2, 7) == 129 
 
-        x = 2       n = 4
-            + 1 
+    i = 2;
+            sum = 129 + pow(2, (2+1)*(2+1)*(2+1) - 1)
+            sum = 129 + pow(2, 26) == 67108993
 
-        i = 2;
-                n = 7 ; sum = 1 + 2^7 = 129
-        i = 3;
-                n = 26 ; sum = 129 + 2^26 = 67108994
+    i = 3;
+            sum = 67108993 + pow(2, (3+1)*(3+1)*(3+1) - 1)
+            sum = 67108993 + pow(2, 63) == !!
+
 
 */
