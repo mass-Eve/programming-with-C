@@ -1,5 +1,5 @@
 // WAP to print the the sum of the following series ~
-// 1 + x^1 + x^4 + x^7 + x^16 + ....... + upto x^n
+// 1 - x^1 + x^4 - x^7 + x^16 + ....... + upto x^n
 
 #include <stdio.h>
 // #include<conio.h>
@@ -16,7 +16,6 @@ void main()
 
     for (i = 1; i <= n; i++)
     {
-        // sum += pow(x, (i*i + 1));
 
         if (i % 2 == 0)
         {

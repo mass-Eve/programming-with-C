@@ -1,5 +1,5 @@
 // WAP to print the the sum of the following series ~
-// 1 + x^2 + x^9 + x^28 + x^65 + ....... + upto x^n
+// 1 - x^2 + x^9 - x^28 + x^65 + ....... + upto x^n
 
 #include <stdio.h>
 // #include<conio.h>
