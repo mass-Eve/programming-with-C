@@ -1,4 +1,4 @@
-// add + in the 1st and - in the 2nd and repeat this for the all
+sum the series.
 
 #include <stdio.h>
 // #include<conio.h>
