@@ -1,11 +1,10 @@
 // WAP to print the following pattern of numbers :-
 /*
-        1
-        1 2 
-        1 2 3
-        1 2 3 4
-        1 2 3 4 5
-
+        5
+        5 6
+        5 6 7
+        5 6 7 8
+        5 6 7 8 9
 */
 
 #include<stdio.h>
