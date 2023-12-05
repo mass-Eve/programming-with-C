@@ -1,4 +1,4 @@
-// WAP tyo print the following pattern of characters:
+// WAP to print the following pattern of characters:
 /*
         * 
         * * 
