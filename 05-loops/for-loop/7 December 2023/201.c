@@ -33,9 +33,9 @@ void main()
         for (int l = 1; l <= 4 - (k - 1); l++)
         {
             if (k % 2 != 0)
-            printf("* ");
-            else
             printf("# ");
+            else
+            printf("* ");
         }
         printf("\n");
     }
