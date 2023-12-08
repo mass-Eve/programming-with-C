@@ -1,12 +1,12 @@
 /*
                 *
-              * * *
-            * * * * *
-          * * * * * * * 
-        * * * * * * * * *
-          * * * * * * * 
-            * * * * *
-              * * *
+              * * 
+            * * *
+          * * * *
+        * * * * *
+          * * * *
+            * * *
+              * * 
                 *
 */
 
@@ -18,11 +18,11 @@ void main()
 
     for (int i = 1; i <= 5; i++)
     {
-        for (int spaces = 1; spaces <= 8 - (i - 1)*2; spaces++)
+        for (int spaces = 1; spaces <= 8 - (i - 1)*2 ; spaces++)
         {
             printf(" ");
         }
-        for (int j = 1; j <= (i - 1)*2 + 1; j++)
+        for (int j = 1; j <= i; j++)
         {
             printf("* ");
         }
@@ -34,7 +34,7 @@ void main()
         {
             printf(" ");
         }
-        for (int l = 1; l <= 7 - (k - 1)*2; l++)
+        for (int l = 1; l <= 4 - (k - 1) ; l++)
         {
             printf("* ");
         }
