@@ -54,8 +54,11 @@ _Ques_. **Why not to use switch(case) statements? or Why should I prefer if-else
 04. If your conditions involve a variable that can take on a wide range of values and does not have a fixed set of constant values, if-else is a better choice. Switch-case is most effective when you're comparing against a predefined set of constants.
 
 But, in the end, it pretty much really depends upon 
-    01. what's the problem statement?
-    02. How you are thinking to handling it?
-    03. What's your approach?
-    , which reallly decides what is best suited for you. Maybe you perform the same thing with switch(case) easily, maybe you perform it well using if-else ladder only! It really depends upon you.
-    And also, in the end, both allows nesting! SO you need to worry! If your approach requires nesting an if statement into a switch(case), do it. If your approach requires nesting a switch(case) into your else clause, do it.
+
+01. what's the problem statement?
+02. How you are thinking to handling it?
+03. What's your approach?
+
+, which reallly decides what is best suited for you. Maybe you perform the same thing with switch(case) easily, maybe you perform it well using if-else ladder only! It really depends upon you.
+
+And also, in the end, both allows nesting! SO you need to worry! If your approach requires nesting an if statement into a switch(case), do it. If your approach requires nesting a switch(case) into your else clause, do it.
