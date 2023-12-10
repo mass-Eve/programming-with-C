@@ -30,7 +30,7 @@
                 break; (optional, it pretty much works the same, if not putted also!)
         }
 
-Ques. **Why should I use switch(case) statements when I already have if-else ladder?**
+_Ques_. **Why should I use switch(case) statements when I already have if-else ladder?**
 
 There are a bunch of resons to choose switch(case) ladder over an if-else ladder. They are ~
 
@@ -43,7 +43,7 @@ There are a bunch of resons to choose switch(case) ladder over an if-else ladder
 
     04. switch(case) statements are designed for situations where you are comparing a single value against multiple possible constant values, while, if-else statements, on the other hand, are more flexible and can handle a wide range of conditions, including complex logical expressions.
 
-Why not to use switch(case) statements? or Why should I prefer if-else ladder over switch(case)?
+_Ques_. **Why not to use switch(case) statements? or Why should I prefer if-else ladder over switch(case)?**
 
 01. switch(case) only evaluates integers and single-character values. That means, you can only perform functions or pass integer or single-character values in the switch(case) expression. While in the if-else ladder, comparisions can be laid out on the basis of any data-type, be it float, be it boolean, etc....
 
