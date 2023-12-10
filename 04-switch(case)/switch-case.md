@@ -1,5 +1,4 @@
 * switch(case) usage Syntax ~
-
     switch (<variable>)
     {
         case <a-constant-thru-which-equality-check-has-to-be-done> :
