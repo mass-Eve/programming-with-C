@@ -34,14 +34,15 @@ _Ques_. **Why should I use switch(case) statements when I already have if-else l
 
 There are a bunch of resons to choose switch(case) ladder over an if-else ladder. They are ~
 
-    01. _Readability_: They improves the readability of the program when you have multiple conditions checking the value of a single variable, especially true when you're comparing a variable against multiple constant values.
+01. _Readability_ :They improves the readability of the program when you have multiple conditions checking the value of a single variable, especially true when you're comparing a variable against multiple constant values.
 
-    02. More _concise_ and _easier_ to read than an if-else ladder.
+02. More _concise_ and _easier_ to read than an if-else ladder.
 
-    03. In many cases, a switch-case statement might be more _efficient_ than a series of if-else statements, especially when there are much options to cater. Compilers can optimize switch statements to use jump tables, making the execution faster compared to a chain of if-else conditions. 
-    It is always a good practice to use switch(case) when you have to check many conditions rather than putting an if-else ladder for every condition in the use.
+03. In many cases, a switch-case statement might be more _efficient_ than a series of if-else statements, especially when there are much options to cater. Compilers can optimize switch statements to use jump tables, making the execution faster compared to a chain of if-else conditions. 
+    
+It is always a good practice to use switch(case) when you have to check many conditions rather than putting an if-else ladder for every condition in the use.
 
-    04. switch(case) statements are designed for situations where you are comparing a single value against multiple possible constant values, while, the if-else statements, on the other hand, are more flexible and can handle a wide range of conditions, including complex logical expressions.
+04. switch(case) statements are designed for situations where you are comparing a single value against multiple possible constant values, while, the if-else statements, on the other hand, are more flexible and can handle a wide range of conditions, including complex logical expressions.
 
 _Ques_. **Why not to use switch(case) statements? or Why should I prefer if-else ladder over switch(case)?**
 
