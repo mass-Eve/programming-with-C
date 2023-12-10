@@ -1,16 +1,18 @@
+a switch statement is a control statement that is used to handle multiple conditions based on the value of an expression. It provides a cleaner alternative to using multiple if-else statements when you have a series of conditions to check.
+
 * switch(case) usage Syntax ~
 
         switch (<variable>)
         {
-            case <a-constant-thru-which-equality-check-has-to-be-done> :
+            case <values 1: a-constant-thru-which-equality-check-has-to-be-done> :
                 body
                 break; (if required)
     
-            case <a-constant-thru-which-equality-check-has-to-be-done> :
+            case <value 2: a-constant-thru-which-equality-check-has-to-be-done> :
                 body
                 break; (if required)
     
-            case <a-constant-thru-which-equality-check-has-to-be-done> :
+            case <value 3: a-constant-thru-which-equality-check-has-to-be-done> :
                 body
                 break; (if required)
     
@@ -21,7 +23,7 @@
             .
             .
     
-            case <a-constant-thru-which-equality-check-has-to-be-done> :
+            case <value n: a-constant-thru-which-equality-check-has-to-be-done> :
                 body
                 break; (if required)
     
@@ -29,6 +31,7 @@
                 body 
                 break; (optional, it pretty much works the same, if not putted also!)
         }
+    Note -: The case value is mandatory to be an integer or a character just like the switch-variable.
 -------------------------------------------------------------
 _Ques_. **Why should I use switch(case) statements when I already have if-else ladder?**
 
@@ -56,7 +59,7 @@ _Ques_. **Why not to use switch(case) statements? or Why should I prefer if-else
 04. If your conditions involve a variable that can take on a wide range of values and does not have a fixed set of constant values, if-else is a better choice. Switch-case is most effective when you're comparing against a predefined set of constants.
 -------------------------------------------------------------
 
-* But, in the end, it pretty much really depends upon 
+But, in the end, it pretty much really depends upon 
 
 01. what's the problem statement?
 02. How you are thinking to handling it?
