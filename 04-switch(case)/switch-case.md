@@ -29,7 +29,7 @@
                 body 
                 break; (optional, it pretty much works the same, if not putted also!)
         }
-
+-------------------------------------------------------------
 _Ques_. **Why should I use switch(case) statements when I already have if-else ladder?**
 
 There are a bunch of resons to choose switch(case) ladder over an if-else ladder. They are ~
@@ -40,9 +40,10 @@ There are a bunch of resons to choose switch(case) ladder over an if-else ladder
 
 03. In many cases, a switch-case statement might be more _efficient_ than a series of if-else statements, especially when there are much options to cater. Compilers can optimize switch statements to use jump tables, making the execution faster compared to a chain of if-else conditions. 
     
-It is always a good practice to use switch(case) when you have to check many conditions rather than putting an if-else ladder for every condition in the use.
+    It is always a good practice to use switch(case) when you have to check many conditions rather than putting an if-else ladder for every condition in the use.
 
 04. switch(case) statements are designed for situations where you are comparing a single value against multiple possible constant values, while, the if-else statements, on the other hand, are more flexible and can handle a wide range of conditions, including complex logical expressions.
+-------------------------------------------------------------
 
 _Ques_. **Why not to use switch(case) statements? or Why should I prefer if-else ladder over switch(case)?**
 
@@ -53,6 +54,7 @@ _Ques_. **Why not to use switch(case) statements? or Why should I prefer if-else
 03. switch(case) is designed for _simple equality comparisons_, and it may not handle complex conditions as effectively.
 
 04. If your conditions involve a variable that can take on a wide range of values and does not have a fixed set of constant values, if-else is a better choice. Switch-case is most effective when you're comparing against a predefined set of constants.
+-------------------------------------------------------------
 
 * But, in the end, it pretty much really depends upon 
 
