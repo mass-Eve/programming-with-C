@@ -61,4 +61,4 @@ But, in the end, it pretty much really depends upon
 
     , which reallly decides what is best suited for you. Maybe you perform the same thing with switch(case) easily, maybe you perform it well using if-else ladder only! It really depends upon you.
 
-And also, in the end, both allows nesting! SO you need to worry! If your approach requires nesting an if statement into a switch(case), do it. If your approach requires nesting a switch(case) into your else clause, do it.
+    And also, in the end, both allows nesting! SO you need to worry! If your approach requires nesting an if statement into a switch(case), do it. If your approach requires nesting a switch(case) into your else clause, do it.
