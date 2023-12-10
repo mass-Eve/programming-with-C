@@ -1,34 +1,34 @@
 * switch(case) usage Syntax ~
 
-    switch (<variable>)
-    {
-        case <a-constant-thru-which-equality-check-has-to-be-done> :
-            body
-            break; (if required)
-
-        case <a-constant-thru-which-equality-check-has-to-be-done> :
-            body
-            break; (if required)
-
-        case <a-constant-thru-which-equality-check-has-to-be-done> :
-            body
-            break; (if required)
-
-        .
-        .
-        .
-        .
-        .
-        .
-
-        case <a-constant-thru-which-equality-check-has-to-be-done> :
-            body
-            break; (if required)
-
-        default :
-            body 
-            break; (optional, it pretty much works the same, if not putted also!)
-    }
+        switch (<variable>)
+        {
+            case <a-constant-thru-which-equality-check-has-to-be-done> :
+                body
+                break; (if required)
+    
+            case <a-constant-thru-which-equality-check-has-to-be-done> :
+                body
+                break; (if required)
+    
+            case <a-constant-thru-which-equality-check-has-to-be-done> :
+                body
+                break; (if required)
+    
+            .
+            .
+            .
+            .
+            .
+            .
+    
+            case <a-constant-thru-which-equality-check-has-to-be-done> :
+                body
+                break; (if required)
+    
+            default :
+                body 
+                break; (optional, it pretty much works the same, if not putted also!)
+        }
 
 Why should I use switch(case) statements when I already have if-else ladder?
 
