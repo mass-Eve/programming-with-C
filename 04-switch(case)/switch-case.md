@@ -30,7 +30,7 @@
                 break; (optional, it pretty much works the same, if not putted also!)
         }
 
-Why should I use switch(case) statements when I already have if-else ladder?
+Ques. **Why should I use switch(case) statements when I already have if-else ladder?**
 
 There are a bunch of resons to choose switch(case) ladder over an if-else ladder. They are ~
 
