@@ -1,4 +1,4 @@
-a switch statement is a control statement that is used to handle multiple conditions based on the value of an expression. It provides a cleaner alternative to using multiple if-else statements when you have a series of conditions to check.
+a switch(case) statement is a control statement that is used to handle multiple conditions based on the value of an expression. It provides a cleaner alternative to using multiple if-else statements when you have a series of conditions to check.
 
 * switch(case) usage Syntax ~
 
@@ -41,7 +41,7 @@ There are a bunch of resons to choose switch(case) ladder over an if-else ladder
 
 02. More _concise_ and _easier_ to read than an if-else ladder.
 
-03. In many cases, a switch-case statement might be more _efficient_ than a series of if-else statements, especially when there are much options to cater. Compilers can optimize switch statements to use jump tables, making the execution faster compared to a chain of if-else conditions. 
+03. In many cases, a switch-case statement might be more _efficient_ than a series of if-else statements, especially when there are much-more options to cater. Compilers can optimize switch statements to use jump tables, making the execution faster compared to a chain of if-else conditions. 
     
     It is always a good practice to use switch(case) when you have to check many conditions rather than putting an if-else ladder for every condition in the use.
 
