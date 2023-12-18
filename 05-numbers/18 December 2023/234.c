@@ -25,4 +25,6 @@ void main()
     else{
         printf("The number %d is not a perfect number!!", num);
     }
+
+    // getch();
 }

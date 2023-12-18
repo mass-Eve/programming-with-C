@@ -1,4 +1,5 @@
-// A number is called an Automorphic number if and only if its square ends in the same digits as the number itself.
+// WAP to input a number and check if it is a automorphic number or not. A number is called an Automorphic number if and only if its square ends in the same digits as the number itself.
+// Hint -: 25 ^2 = 6(25)
 
 #include<stdio.h>
 // #include<conio.h>
@@ -19,4 +20,6 @@ void main()
     else{
         printf("Alas. It is not an Automorphic Number.");
     }
+
+    // getch();
 }

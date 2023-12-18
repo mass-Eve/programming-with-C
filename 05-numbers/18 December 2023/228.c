@@ -1,4 +1,4 @@
-// WAP to input a number and calculate the sum of square of each of it's digits
+// WAP to input a number and calculate the sum of square of each of it's digits.
 
 #include<stdio.h>
 // #include<conio.h>
@@ -28,4 +28,5 @@ void main()
     }
     printf("The sum of the sqaures of digits of %d is %d", num_copy, sum);
     
+    // getch();
 }

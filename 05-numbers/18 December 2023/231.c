@@ -1,4 +1,4 @@
-// WAP to input a number and print the total of factors the number.
+// WAP to input a number and print the total no. of factors the number.
 
 #include<stdio.h>
 // #include<conio.h>
@@ -20,4 +20,6 @@ void main()
     }
     printf("%d is a factor of %d\n", num, num);
     printf("The total no. of factors of %d are %d", num, count);
+
+    // getch();
 }

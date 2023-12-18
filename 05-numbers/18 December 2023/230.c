@@ -19,4 +19,5 @@ void main()
     }
     printf("%d is a factor of %d", num, num);
 
+    // getch();
 }

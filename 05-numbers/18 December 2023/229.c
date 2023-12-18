@@ -1,4 +1,4 @@
-// WAP to input a number and calculate the num of digits in the number
+// WAP to input a number and calculate the num of digits in the number.
 
 #include<stdio.h>
 // #include<conio.h>
@@ -27,5 +27,6 @@ void main()
         }
     }
     printf("The number of digits in %d is %d", num_copy, digit_count);
-    
+
+    // getch();
 }
