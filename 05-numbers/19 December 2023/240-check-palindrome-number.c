@@ -1,4 +1,4 @@
-// WAP to input a number and reverse it.
+// WAP to input a number and check if it is a palindrome number or not.
 
 #include<stdio.h>
 // #include<conio.h>
