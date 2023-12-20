@@ -24,7 +24,7 @@ void main()
     while (main_num > 0)
     {
         n_digits += 1;
-        main_num = main_num / 10;
+        main_num = main_num / 10; // loop iterator
         // ++n_digits;
     }
 
@@ -35,7 +35,7 @@ void main()
     {
         rem = num_copy % 10;
         sum += pow(rem, n_digits);
-        num_copy = num_copy / 10;
+        num_copy = num_copy / 10; // loop iterator
     }
 
 
@@ -44,5 +44,4 @@ void main()
         printf("The number is an Armstrong Number.");
     else
         printf("The number is not an Armstrong Number.");
-
 }

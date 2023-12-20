@@ -20,13 +20,14 @@ void main()
         // variable to calculate the factorial is created inside the while loop to avoid mis-calculations as the number of times this loop will run, it will created freeshly, thus leaving no traces of past values
         int fac = 1;
         rem = num_copy1 % 10;
+
         // this loop will calculate the the factorial of the number.
         for (int i = 1; i <= rem; i++)
         {
             fac *= i;
         }
         sum += fac;
-        num_copy1 /= 10;
+        num_copy1 /= 10; // loop iterator
     }
 
     // Checking conditions for special number.

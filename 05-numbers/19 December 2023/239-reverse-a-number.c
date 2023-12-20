@@ -17,7 +17,7 @@ void main()
     {
         rem = num % 10;
         reversed_num = (reversed_num * base) + rem;
-        num /= 10;
+        num /= 10; // loop iterator
     }
-    printf("The rev form of %d is %d", num, reversed_num);
+    printf("The reversed form of %d is %d", num, reversed_num);
 }

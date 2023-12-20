@@ -15,12 +15,11 @@ void main()
     int rem = 0;
 
     // Calculation Part
-
     while (num_copy > 0)
     {
         rem = num_copy % 10;
         reversed_num = (reversed_num * base) + rem;
-        num_copy /= 10;
+        num_copy /= 10; // loop iterator
     }
 
     // Checking conditions for special number.
