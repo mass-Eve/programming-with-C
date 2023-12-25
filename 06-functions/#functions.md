@@ -104,3 +104,4 @@ Basicaly, Parameters tell the function what kind of values to receive and, Argum
       >>> Error
 
     In this code piece, the sum variable has local scope and is created freshly every-single time the loop comes to an iteration. And calling or using it outside of its scope will return an error.
+    
