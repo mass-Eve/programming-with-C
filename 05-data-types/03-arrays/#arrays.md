@@ -1,5 +1,6 @@
                                     Introduction To Arrays
 
+#### Introduction
 * An Array is a collection of data items of the same type.
 
 * All the items are stored at contiguous memory locations.
@@ -12,13 +13,13 @@
 
 * We can create arrays of any number-dimension.
 
-#### Syntax Of Decalring An Empty Array
+#### Syntax Of Decalring An Array
 
     <data-type-of-array> <identifier>[<total no.of-elements to be stored in the array>];
 
     >>> This will create an empty array which can hold a total of <length> values of <data-type>.
 
-#### Syntax Of Declaring A Complete Array
+#### Syntax Of Declaring A + Initialising An Array
 
     <data-type-of-array> <identifier>[<total no.of-elements to be stored in the array>] = {<all the values to be stored, separated by a comma (,)>} ;
 
