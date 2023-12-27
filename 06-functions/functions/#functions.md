@@ -13,7 +13,6 @@
 
 ; and together they are known as function definition.
 
----------------------------------
 
 #### Q. What is a function Call ?
 * A function call is a method of calling a function outside that function anywhere in the program code. 
@@ -22,7 +21,6 @@
 * A function call passes the execution control from the calling function to the called function.
 
 * The Execution of a **_return_** statement in the called function returns the control from the called function to the calling function, and possibly also a value to the calling function (, if apllicable).
-
 
 
 
@@ -93,17 +91,16 @@ void main(){
 * Concept of Scope of Variables is not limited to just function blocks. It is applicable to all the compound statements.
 
 * For instance, if a variable is created inside a loop body, then it will be created freshly every single time the loop runs.
+```c
+for (int i = 1; i <= 5; i++)
+{
+    int sum = 0;
+    sum++ ;
+}
 
-      for (int i = 1; i <= 5; i++)
-      {
-          int sum = 0;
-          sum++ ;
-      }
-      
-      printf("%d", sum);
-
-      // Output
-      >>> Error
+printf("%d", sum);
+// Output
+>>> Error
+```c
 
     In this code piece, the sum variable has local scope and is created freshly every-single time the loop comes to an iteration. And calling or using it outside of its scope will return an error.
-    
