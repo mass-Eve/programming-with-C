@@ -79,7 +79,7 @@ void main(){
 // Output 
 >>> 11
 ```
-    In the code snippet above, (int num1, int num2), which are passed in the function declaration are the *Parameters* for add() function. And the values (5, 6), which are passed in the function's calling are the *Arguments* for the add() function.
+In the code snippet above, (int num1, int num2), which are passed in the function declaration are the *Parameters* for add() function. And the values (5, 6), which are passed in the function's calling are the *Arguments* for the add() function.
 
 #### Scope Of Variables
 * The variables declared inside the function and the variables declared outside the function, both have different scopes.
@@ -103,4 +103,4 @@ printf("%d", sum);
 >>> Error
 ```
 
-    In this code piece, the sum variable has local scope and is created freshly every-single time the loop comes to an iteration. And calling or using it outside of its scope will return an error.
+In this code piece, the sum variable has local scope and is created freshly every-single time the loop comes to an iteration. And calling or using it outside of its scope will return an error.
