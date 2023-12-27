@@ -25,11 +25,13 @@
 
 #### Examples ~
 
-    <!-- create an empty array that can store 4 integer values -->
-    int marks[4];
+```c
+// create an empty array that can store 4 integer values.
+int marks[4];
 
-    <!-- create an array having 4 integer values -->
-    int marks[4] = {45, 48, 39, 31};
+// create an array having 4 integer values as well.
+int marks[4] = {45, 48, 39, 31};
+```
 
 ### Accessing the elements of an Array ~
 * The elements of an array are accessed on the basis of indexing values.
