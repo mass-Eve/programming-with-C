@@ -65,7 +65,7 @@ There can be 4 types of user-defined functions :
 Basicaly, Parameters tell the function what kind of values to receive and, Arguments are the values that are passed by the user or the programmer and tell the function (in which they are passed) to placehold them in their respective variables or placeholders.
 
 * For example -  
-
+```c
       // A function to add two numbers
   
       int add(int num1, int num2){
@@ -79,6 +79,7 @@ Basicaly, Parameters tell the function what kind of values to receive and, Argum
 
       // Output 
       >>> 11
+```
     In the code snippet above, (int num1, int num2), which are passed in the function declaration are the *Parameters* for add() function. And the values (5, 6), which are passed in the function's calling are the *Arguments* for the add() function.
 
 #### Scope Of Variables
