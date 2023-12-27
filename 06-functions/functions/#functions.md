@@ -101,6 +101,6 @@ for (int i = 1; i <= 5; i++)
 printf("%d", sum);
 // Output
 >>> Error
-```c
+```
 
     In this code piece, the sum variable has local scope and is created freshly every-single time the loop comes to an iteration. And calling or using it outside of its scope will return an error.
