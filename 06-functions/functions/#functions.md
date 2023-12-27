@@ -66,19 +66,17 @@ Basicaly, Parameters tell the function what kind of values to receive and, Argum
 
 * For example -  
 ```c
-      // A function to add two numbers
-  
-      int add(int num1, int num2){
-          return (num1 + num2);
-      }
+// A function to add two numbers
 
-      // Main function
-      void main(){
-          add(5, 6);
-      }
-
-      // Output 
-      >>> 11
+int add(int num1, int num2){
+    return (num1 + num2);
+}
+// Main function
+void main(){
+    add(5, 6);
+}
+// Output 
+>>> 11
 ```
     In the code snippet above, (int num1, int num2), which are passed in the function declaration are the *Parameters* for add() function. And the values (5, 6), which are passed in the function's calling are the *Arguments* for the add() function.
 
