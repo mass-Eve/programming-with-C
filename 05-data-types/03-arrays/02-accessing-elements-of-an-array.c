@@ -19,7 +19,7 @@ void main()
         printf("Marks of Student %d: %d\n", (i+1), marks[i]);
     }
     
-    // Accessing elements of an array using for loop.
+    // Accessing elements of an array using while loop.
     printf("using while loop - \n");
 
     int j = 0;
@@ -29,7 +29,7 @@ void main()
         j++;
     }
 
-    // Accessing elements of an array using for loop.
+    // Accessing elements of an array using do-while loop.
     printf("using do-while loop - \n");
 
     int k = 0;
