@@ -1,5 +1,6 @@
                                     Introduction To Arrays
 
+#### Introduction
 * An Array is a collection of data items of the same type.
 
 * All the items are stored at contiguous memory locations.
@@ -12,13 +13,13 @@
 
 * We can create arrays of any number-dimension.
 
-#### Syntax Of Decalring An Empty Array
+#### Syntax Of Decalring An Array
 
     <data-type-of-array> <identifier>[<total no.of-elements to be stored in the array>];
 
     >>> This will create an empty array which can hold a total of <length> values of <data-type>.
 
-#### Syntax Of Declaring A Complete Array
+#### Syntax Of Declaring A + Initialising An Array
 
     <data-type-of-array> <identifier>[<total no.of-elements to be stored in the array>] = {<all the values to be stored, separated by a comma (,)>} ;
 
@@ -38,45 +39,3 @@
       printf("The marks of Student 1 are: %d", marks[0]);
 
       >>> 45
-
-#### Accessing The elements Of An Array Using for loop ~
-
-    for (int i = 0; i < 4; i++)
-    {
-        printf("Marks of Student %d: %d\n", (i+1), marks[i]);
-    }
-
-    >>> 
-    Marks of Student 1: 45
-    Marks of Student 2: 48
-    Marks of Student 3: 39
-    Marks of Student 4: 31  
-
-#### Accessing The elements Of An Array Using for loop ~
-
-    int j = 0;
-    while (j < 4)
-    {
-        printf("Marks of Student %d: %d\n", (j+1), marks[j]);
-        j++;
-    }
-
-    >>>
-    Marks of Student 1: 45
-    Marks of Student 2: 48
-    Marks of Student 3: 39
-    Marks of Student 4: 31  
-
-#### Accessing The elements Of An Array Using for loop ~
-
-    int k = 0;
-    do{
-        printf("Marks of Student %d: %d\n", (k+1), marks[k]);
-        k++;
-    } while (k < 4);
-
-    >>> 
-    Marks of Student 1: 45
-    Marks of Student 2: 48
-    Marks of Student 3: 39
-    Marks of Student 4: 31  
