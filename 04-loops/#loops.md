@@ -1,6 +1,6 @@
 16/11/2023
 
-                                                      Loops In C Programming
+                                        Loops In C Programming
 
 * When we want to perform a task repetitively, we use the concept of Loops.
 
