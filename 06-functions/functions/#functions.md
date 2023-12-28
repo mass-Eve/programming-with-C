@@ -1,4 +1,4 @@
-                                        Introduction To Functions 
+                                     Introduction To Functions 
 
 ### Q. What are functions in C ?
 * Functions are defined as the blocks of code that are combined in such a way that they can be executed any number of time without re-writing the whole code, any-where across the program.
@@ -66,6 +66,7 @@ There can be 4 types of user-defined functions :
 Basicaly, Parameters tell the function what kind of values to receive and, Arguments are the values that are passed by the user or the programmer and tell the function (in which they are passed) to placehold them in their respective variables or placeholders.
 
 * For example -  
+
 ```c
 // A function to add two numbers
 
@@ -79,6 +80,7 @@ void main(){
 // Output 
 >>> 11
 ```
+
 In the code snippet above, (int num1, int num2), which are passed in the function declaration are the *Parameters* for add() function. And the values (5, 6), which are passed in the function's calling are the *Arguments* for the add() function.
 
 #### Scope Of Variables
@@ -91,6 +93,7 @@ In the code snippet above, (int num1, int num2), which are passed in the functio
 * Concept of Scope of Variables is not limited to just function blocks. It is applicable to all the compound statements.
 
 * For instance, if a variable is created inside a loop body, then it will be created freshly every single time the loop runs.
+
 ```c
 for (int i = 1; i <= 5; i++)
 {
@@ -103,8 +106,4 @@ printf("%d", sum);
 >>> Error
 ```
 
-<<<<<<< HEAD
 In this code piece, the sum variable has local scope and is created freshly every-single time the loop comes to an iteration. And calling or using it outside of its scope will return an error.
-=======
-In this code piece, the sum variable has local scope and is created freshly every-single time the loop comes to an iteration. And calling or using it outside of its scope will return an error.
->>>>>>> eaa32b27904f4fa746a8601c77bd6509819b508b
