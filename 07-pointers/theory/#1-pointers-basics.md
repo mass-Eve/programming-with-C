@@ -36,7 +36,7 @@ int *marks_pointer;
 ### Assigning Values to a Pointer
 * Pointer initialization is the process where we assign some initial value to the pointer variable. We generally use the ( & ) addressof operator to get the memory address of a variable and then store it in the pointer variable.
 
-    <data-type-of-pointer> * <identifier-name> = &<variable-identifier> ;
+      <data-type-of-pointer> * <identifier-name> = &<variable-identifier> ;
 
 * Example ~
 
