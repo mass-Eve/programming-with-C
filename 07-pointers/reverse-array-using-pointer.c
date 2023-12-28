@@ -26,7 +26,7 @@ void main()
     mp2 = marks_rev;
     for (int k = 0; k < (sizeof(marks)/4); k++)
     {
-        printf("%d", *mp);
-        mp++;
+        printf("%d", *mp2);
+        mp2++;
     }
 }
