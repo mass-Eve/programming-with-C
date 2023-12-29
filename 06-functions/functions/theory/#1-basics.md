@@ -3,6 +3,8 @@
 ### Q. What are functions in C ?
 * Functions are defined as the blocks of code that are combined in such a way that they can be executed any number of time without re-writing the whole code, any-where across the program.
 
+* A function is a self-contained block of statements, that performs a coherent task of some kind.
+
 * The different parts of a function includes -->
     01. **_Function decaration_** --> 
     A function declaration establishes the name, return type, and attributes of a function that is defined elsewhere in the program. 
@@ -12,6 +14,8 @@
     Functions must have a definition and should have a declaration, although a definition can serve as a declaration if the declaration appears before the function is called. If the declaration has information about the types and number of parameters and no function body, then the function declaration is a prototype.
 
 ; and together they are known as function definition.
+
+* If a C program have to contain only one function, then it should be only `main()`, as the `main()` is the primary and the most necessary need of a C program.
 
 
 #### Q. What is a function Call ?
@@ -23,17 +27,16 @@
 * The Execution of a **_return_** statement in the called function returns the control from the called function to the calling function, and possibly also a value to the calling function (, if apllicable).
 
 
-
-* Types Of Functions -->
-    01. **_Built-in Functions_** ~ 
-        * These are the functions which comes pre-defined in C language.   
-        * Built-in functions are stored in their respective libraries. 
-        * For example -- 
-            printf() and scanf() functions are stored in the **_Standard I/O Header File_**.
-            sqrt() and pow() functions are stored in the **_Math Library_**.
-
-    02. **_User-defined Functions_** ~
-        * These are created by the user or the programmer itself for simplifying his code, to increase the readability and reusability of the code.
+#### Types Of Functions -->
+01. **_Built-in Functions_** ~ 
+    * These are the functions which comes pre-defined in C language.   
+    * Built-in functions are stored in their respective libraries. 
+    * Also known as Library functions.
+    * For example -- 
+        printf() and scanf() functions are stored in the **_Standard I/O Header File_**.
+        sqrt() and pow() functions are stored in the **_Math Library_**.
+02. **_User-defined Functions_** ~
+    * These are created by the user or the programmer itself for simplifying his code, to increase the readability and reusability of the code.
 
 #### Declaring user-defined Functions ~
 
@@ -82,6 +85,12 @@ void main(){
 ```
 
 In the code snippet above, (int num1, int num2), which are passed in the function declaration are the *Parameters* for add() function. And the values (5, 6), which are passed in the function's calling are the *Arguments* for the add() function.
+
+* **Note** - 
+01. Sometimes, parameter are also referred to as *formal arguments*, while the arguments are referred to as *actual arguments*.
+02. The number of parameter, that are allowewd in a function and the arguments passed in that function's call, both should match. Otherwise, ready for an `ERROR`.
+03. There's no boundation upon how  many `return` statements can be there in a function. But as soon as a `return` statement is executed, the control will be taken out from that function.
+04. I C, the `return` statement can return only one value at a time.
 
 #### Scope Of Variables
 * The variables declared inside the function and the variables declared outside the function, both have different scopes.

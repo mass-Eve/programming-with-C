@@ -48,7 +48,7 @@ When passing arrays to functions, you are essentially passing a reference to the
 3. **No Automatic Bounds Checking:** 
     * C does not perform automatic bounds checking on array indices. 
     * If you're not careful while accessing the elements of an array and mistakelnly provided indices outside the bounds of an array, it can lead to undefined behavior, such as crashes or data corruption.  
-    \  
+    * Therefore, check the bounds on yourself, as C will neither warn you nor raise an exception regarding it.
 
     ```c
     int numbers[3] = {10, 20, 30};

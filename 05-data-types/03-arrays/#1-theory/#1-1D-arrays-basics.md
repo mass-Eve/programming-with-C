@@ -13,6 +13,15 @@
 
 * We can create arrays of any number-dimension.
 
+* An array is also known by, a *__subscripted variable__*.
+
+#### Declaration of Arrays
+* Arrays can be declared in many fashions, but there are a few important point which have to be kept in mind while declaring the arrays.
+    1. When we are only declaring the array and not initialising it any value, we have to mention the size of the array.
+    2. When we are declaring and initialising the array in the same statement, we need not to mention the size of the array. It is completely optional in that case.
+    3. Whenever we declare an array with a higher size and don't fill all of its values, the compiler assigns all the left-over positions with a garbage value, which is generally 0.
+    
+
 #### Syntax Of Decalring An Array
 
     <data-type-of-array> <identifier>[<total no.of-elements to be stored in the array>];
@@ -28,6 +37,7 @@
 
 ```c
 // create an empty array that can store 4 integer values -->
+// Declare an array
 int marks[4];
 
 // create an array having 4 integer values as well -->
