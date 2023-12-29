@@ -1,15 +1,15 @@
 ### Introduction
 
-* Whenever we want to use a function, we have to call it. 
-* Now there are two methods or ways of calling a function, and both of them have there importance in there respective implementations ~
+    * Whenever we want to use a function, we have to call it. 
+    * Now there are two methods or ways of calling a function, and both of them have there importance in there respective implementations ~
 01. Call by Value.
 02. Call by Reference.
 
 #### Call By Value Mechanism
-* In `call by value` mechanism, the arguments are passed as it is into the function's definition. 
-* What does it mean? When we pass arguments in the function call, there values are copied as it is in the parameters present in the function's declaration. And as a result, any updation taking place inside the function's body, will only update the values inside the parameters and will show no effect on the actual values that were being passed in the function calling (arguments)
+    * In `call by value` mechanism, the arguments are passed as it is into the function's definition. 
+    * What does it mean? When we pass arguments in the function call, there values are copied as it is in the parameters present in the function's declaration. And as a result, any updation taking place inside the function's body, will only update the values inside the parameters and will show no effect on the actual values that were being passed in the function calling (arguments)
 
-* Lets implement it using a simple C program
+    * Lets implement it using a simple C program
 
 ```c
 // WAP to swap to integer values.
@@ -57,12 +57,12 @@ Since changes made to the parameters inside the function, it does not affect the
 Variables inside the function are isolated from the outside world. This isolation can help prevent unintended side effects and makes it easier to reason about the flow of data within the program.
 
 4. **Safety:**
-* Call by Value is generally safer when dealing with sensitive data or critical operations. 
-* It ensures that the function cannot inadvertently modify the values of variables outside its scope.
+    * Call by Value is generally safer when dealing with sensitive data or critical operations. 
+    * It ensures that the function cannot inadvertently modify the values of variables outside its scope.
 
 5. **No Pointer Overhead:**
-* Call by Value does not involve the use of pointers, reducing the overhead associated with managing and dereferencing pointers. 
-* This can be advantageous in terms of both execution speed and memory usage.
+    * Call by Value does not involve the use of pointers, reducing the overhead associated with managing and dereferencing pointers. 
+    * This can be advantageous in terms of both execution speed and memory usage.
 
 6. **Compatibility:**
 Functions using Call by Value are often more compatible with other languages and systems because the interface is simpler. It's a common parameter passing mechanism across various programming languages.
@@ -79,8 +79,8 @@ Call by Value promotes a more functional programming style where variables are t
 Copying large data structures can incur a performance overhead, especially when dealing with complex objects. This overhead may affect the program's efficiency and speed, particularly in cases where frequent function calls occur with substantial data.
 
 2. **Memory Usage:**
-* More memory is consumed.
-* And In cases where the data being passed is large, passing by value can result in increased memory usage. This is because a copy of the entire data structure is created, consuming additional memory.
+    * More memory is consumed.
+    * And In cases where the data being passed is large, passing by value can result in increased memory usage. This is because a copy of the entire data structure is created, consuming additional memory.
 
 3. **Inefficiency for Mutable Objects:**
 If the data being passed is mutable (can be changed), and the function needs to modify the original data, using Call by Value might involve additional steps to return the modified data.
@@ -92,18 +92,18 @@ Returning multiple values from a function can be less straightforward with Call 
 Since Call by Value involves working with copies of the original data, there is no direct way to modify the original data within the function. And if the requirement is to update the original values, this can lead to the need for using additional mechanisms, such as returning modified values.
 
 6. **Not Suitable for Resource Management:**
-* When dealing with resources like file handles, network connections, or dynamic memory allocation, Call by Value may not be suitable. 
-* Closing a file or deallocating memory inside a function may not affect the original resource outside the function.
+    * When dealing with resources like file handles, network connections, or dynamic memory allocation, Call by Value may not be suitable. 
+    * Closing a file or deallocating memory inside a function may not affect the original resource outside the function.
 
 7. **Overhead for Basic Types:**
 For simple and small data types (like integers or characters), the overhead of copying values may be negligible. In such cases, the advantages of Call by Value might not be as pronounced.
 
 
 #### Call By Reference Mechanism
-* In `call by reference` method of calling a function, we pass the memory address of that value, instead of the actual value.
-* What does it mean? Basically what happens is, when we are passing the memory address of the variable, we are not passing a copy of the variable, instead, we are passing that variable itself. And because the variable is now accessed using its memory location, any updation that happens inside the function's body, will show its effects on the main value as well. As now eveything is happening on the main value, instead of a copied value.
+    * In `call by reference` method of calling a function, we pass the memory address of that value, instead of the actual value.
+    * What does it mean? Basically what happens is, when we are passing the memory address of the variable, we are not passing a copy of the variable, instead, we are passing that variable itself. And because the variable is now accessed using its memory location, any updation that happens inside the function's body, will show its effects on the main value as well. As now eveything is happening on the main value, instead of a copied value.
 
-* Lets implement it using a simple C program
+    * Lets implement it using a simple C program
 ```c
 // WAP to swap to integer values.
 #include<stdio.h>
@@ -154,11 +154,11 @@ Since the function operates on the actual data rather than a copy, there is no n
 Call by Reference simplifies the process of returning multiple values from a function. The function can modify the values of the referenced variables, and the changes are visible outside the function.
 
 5. **Efficiency for Large Objects:**
-* For large objects or structures, Call by Reference is more efficient than Call by Value. 
-* Passing a reference to the data structure avoids the need to copy the entire object, leading to better performance.
+    * For large objects or structures, Call by Reference is more efficient than Call by Value. 
+    * Passing a reference to the data structure avoids the need to copy the entire object, leading to better performance.
 
 6. **Direct Access to Original Data:**
-* Call by Reference allows the function to directly access and modify the original data. This can be advantageous in scenarios where direct manipulation of the original data is necessary.
+Call by Reference allows the function to directly access and modify the original data. This can be advantageous in scenarios where direct manipulation of the original data is necessary.
 
 7. **Dynamic Memory Management:**
    * When dealing with dynamic memory allocation, Call by Reference allows a function to manipulate pointers and manage memory more effectively. 
