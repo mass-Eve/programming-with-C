@@ -26,9 +26,61 @@ There are four types of storage classes in C.
 <!-- ### Features Of Variables defined under Automatic Storage Classes.
 01. The values of the variable is stored in the memory -->
 
-| Storage Class Type | Where they are stored? | How To Declare | Default initial value | Scope | Lifespan | Important Note |
-| :----------------: | :--------------------: | :------------: | :-------------------: | :---: | :------: | :------------: |
-| Automatic | Memory | using `auto` keyword | An unpredicted value, also known as `GARBAGE VALUE` | Local to the block in which the variable is defined. | Till the control remains within the block in which the variable is defined. | |
-| Register | CPU Registers | using `register` keyword | An unpredicted value, also known as `GARBAGE VALUE` | Local to the block in which the variable is defined. | Till the control remains within the block in which the variable is defined. | It is not necessary that after using the `register` keyword, the value will be stored in a register. This is because the number of registers in a CPU are limited. In such a case, it will work the same as `auto`|
-| Static | Memory | using `static` keyword | Zero (0) | Local to the block in which the variable is defined. | Value of the variable persists between the different function calls. | `static` means, the variable will be declared once, not again and again. And that is why `static` variables don't disappear when the function is no longer active. Their value persist and whenever the control comes back to their function, the static variables have the same value they had from last time's call |
-| External | Memory | using `extern` keyword | Zero (0) | Global Scope | As long as the program's execution doesn't come to an end.
+| Storage Class Type | Where they are stored? | How To Declare | Default initial value | Scope | Lifespan |
+| :----------------: | :--------------------: | :------------: | :-------------------: | :---: | :------: |
+| Automatic | Memory | using `auto` keyword | An unpredicted value, also known as `GARBAGE VALUE` | Local to the block in which the variable is defined. | Till the control remains within the block in which the variable is defined. |
+| Register | CPU Registers | using `register` keyword | An unpredicted value, also known as `GARBAGE VALUE` | Local to the block in which the variable is defined. | Till the control remains within the block in which the variable is defined. | 
+| Static | Memory | using `static` keyword | Zero (0) | Local to the block in which the variable is defined. | Value of the variable persists between the different function calls. | 
+| External | Memory | using `extern` keyword | Zero (0) | Global Scope | Till the end of the program.
+
+## Important Notes To Keep In Mind ~
+
+*__Registers Storage Class__*
+It is not necessary that after using the `register` keyword, the value will get stored in a register. This is because the number of registers in a CPU are limited. In such a case, it will work the same as `auto` keyword.
+
+
+*__Static Storage Class__*
+* `static` means, the variable will be declared once, not again and again. 
+And that is why `static` variables don't disappear when the function is no longer active. Their value persist and whenever the control comes back to their function, the static variables have the same value they had from last time's call.
+* For example -
+
+```c
+int demo_func()
+{
+    int i = 1;
+    printf("%d", i);
+    i++;
+}
+```
+
+* Here, the line `int i = 1;` will run only-and-only `ONE` time, does not matter if the function is called a hundred times. The 100th time, it will probably take 100 or 101, and not 1. 
+
+* Lifecycle of `static` variables ~
+    * When used with local variables, they retain their values between function calls. They are created once and persist throughout the program's execution.
+    * When used with global variables, they exist for the entire program and are only accessible within the file where they are declared.
+    * When used with functions, it limits their visibility to the file where they are declared.
+
+## When to use Which Storage Class?
+
+1. **auto:**
+    - By default, all local variables are `auto`. So, you don't explicitly use the `auto` keyword.
+    - Use when you need a temporary variable with a limited scope, and you want it to be automatically created and destroyed within a block.
+
+2. **register:**
+    - Modern compilers are quite good at optimizing register allocation, so using `register` explicitly is often unnecessary.
+    - Use only when you are certain that storing a variable in a register will significantly improve the program's performance.
+
+3. **static:**
+    - **Local Static Variables:**
+      - When you want a variable to retain its value between function calls.
+      - When you want to initialize a variable only once, and not every time the function is called.
+    - **Global Static Variables:**
+      - When you want a variable to have file scope and not be accessible outside the current file.
+    - **Static Functions:**
+      - When you want to limit the visibility of a function to the current file.
+
+4. **extern:**
+    - When you need to use a variable or function that is defined in another file.
+    - Use `extern` to declare the existence of a variable or function, and provide the actual definition during the linking phase.
+    - Use `extern` to declare the variables that are being used by almost all the functions in the program.
+    - These variables will remain active in the memory till the end of the program, therefore, will consume a lot of memory. Use them wisely!
