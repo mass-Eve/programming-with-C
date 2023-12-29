@@ -58,7 +58,7 @@ When passing arrays to functions, you are essentially passing a reference to the
     * All elements in an array must be of the same data type. 
     * Elements with Hetrogeneous data types are not allowed in arrays, in C. All the elements must be Homogeneous.
     * If you need to store elements of different types, you may need to resort to using structures or other data structures.
-&nbsp;
+&nbsp;  
     ```c
     // An array of integers
     int integers[5] = {1, 2, 3, 4, 5};
