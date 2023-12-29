@@ -20,6 +20,7 @@
 
 #### Q. What is a function Call ?
 * A function call is a method of calling a function outside that function anywhere in the program code. 
+
 * The function through which the call to another function is made is called as the **_Calling Function_**, while, the function which is being called by the calling function is called as the **_Called Function_**.
 
 * A function call passes the execution control from the calling function to the called function.
@@ -89,8 +90,10 @@ In the code snippet above, (int num1, int num2), which are passed in the functio
 * **Note** - 
 01. Sometimes, parameter are also referred to as *formal arguments*, while the arguments are referred to as *actual arguments*.
 02. The number of parameter, that are allowewd in a function and the arguments passed in that function's call, both should match. Otherwise, ready for an `ERROR`.
+
 03. There's no boundation upon how  many `return` statements can be there in a function. But as soon as a `return` statement is executed, the control will be taken out from that function.
 04. I C, the `return` statement can return only one value at a time.
+
 
 #### Scope Of Variables
 * The variables declared inside the function and the variables declared outside the function, both have different scopes.

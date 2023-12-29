@@ -26,6 +26,7 @@ The indirection operator in C is represented by the asterisk ' __*__ ' symbol. I
 
     All of them will work exactly the same.
 
+
 ```c
 // A variable marks, storing the marks of a student.
 int marks;
@@ -50,6 +51,8 @@ int *roll_pointer = &roll ;         // Also known as Pointer Definition or Point
 int *roll_pointer;
 roll_pointer = &roll ;
 ```
+
+* *Note* - When we write <type> *<ptr-name>, we mean that <ptr-name> will store the memory address number of <data-type>. For example - if we write `int *ptr`, this means that the pointer `ptr` will be storing the memory address of a `integer type` value. If we write `char *ptr`, this means that the pointer `ptr` is going to store the memory address of a `character type` value.
 
 ### Accessing The Values Inside A Pointer -->
 *__%p__* format specifier is used to access the value inside a pointer, which is basically the address of the variable.
