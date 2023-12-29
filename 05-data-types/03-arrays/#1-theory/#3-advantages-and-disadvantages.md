@@ -47,7 +47,7 @@ When passing arrays to functions, you are essentially passing a reference to the
 
 3. **No Automatic Bounds Checking:** 
     * C does not perform automatic bounds checking on array indices. 
-    * If you're not careful while accessing the elements of an array and mistakelnly provided indices outside the bounds of an array, it can lead to undefined behavior, such as crashes or data corruption.
+    * If you're not careful while accessing the elements of an array and mistakelnly provided indices outside the bounds of an array, it can lead to undefined behavior, such as crashes or data corruption.  
     \  
 
     ```c
@@ -66,7 +66,7 @@ When passing arrays to functions, you are essentially passing a reference to the
 
 6. **Passing by Value:** 
     * When passing an array to a function, you're actually passing a copy of the array's address. If you modify the array within the function, the changes affect the original array. This creates a mess when you need to retain the original array.
-    * However, you can't directly determine the size of the array within the function.
+    * However, you can't directly determine the size of the array within the function.  
     \  
 
     ```c
