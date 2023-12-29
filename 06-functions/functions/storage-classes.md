@@ -33,6 +33,11 @@ There are four types of storage classes in C.
 | Static | Memory | using `static` keyword | Zero (0) | Local to the block in which the variable is defined. | Value of the variable persists between the different function calls. | 
 | External | Memory | using `extern` keyword | Zero (0) | Global Scope | Till the end of the program.
 
+## Declaring Storage Classes ~
+```c
+<storage-class> <var-data-type> <-var-identifier>
+```
+
 ## Important Notes To Keep In Mind ~
 
 *__Registers Storage Class__*
