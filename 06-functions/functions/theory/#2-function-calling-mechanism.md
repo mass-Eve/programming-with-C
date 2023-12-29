@@ -1,15 +1,17 @@
-### Introduction
+# Introduction
 
-    * Whenever we want to use a function, we have to call it. 
-    * Now there are two methods or ways of calling a function, and both of them have there importance in there respective implementations ~
-01. Call by Value.
-02. Call by Reference.
+* Whenever we want to use a function, we have to call it. 
+* Now there are two methods or ways of calling a function, and both of them have there importance in there respective implementations ~
 
-#### Call By Value Mechanism
-    * In `call by value` mechanism, the arguments are passed as it is into the function's definition. 
-    * What does it mean? When we pass arguments in the function call, there values are copied as it is in the parameters present in the function's declaration. And as a result, any updation taking place inside the function's body, will only update the values inside the parameters and will show no effect on the actual values that were being passed in the function calling (arguments)
+   01. Call by Value.
+   02. Call by Reference.
 
-    * Lets implement it using a simple C program
+## Call By Value Mechanism
+* In `call by value` mechanism, the arguments are passed as it is into the function's definition. 
+
+* What does it mean? When we pass arguments in the function call, there values are copied as it is in the parameters present in the function's declaration. And as a result, any updation taking place inside the function's body, will only update the values inside the parameters and will show no effect on the actual values that were being passed in the function calling (arguments)
+
+* Lets implement it using a simple C program
 
 ```c
 // WAP to swap to integer values.
@@ -45,7 +47,7 @@ void main()
     b = 30
 ```
 
-##### Advantages Of using Call By Value Mechanism
+### Advantages Of using Call By Value Mechanism
 
 1. **Simplicity:** `NO FANCY THINGS`
 Call by Value is simpler to understand and implement. It involves straightforward copying of values, making the code more readable and less prone to errors. 
@@ -73,7 +75,7 @@ In parallel programming environments, Call by Value can be more suitable as it a
 8. **Immutable Semantics:**
 Call by Value promotes a more functional programming style where variables are treated as immutable. This can make the code more modular and easier to reason about, especially in concurrent or multithreaded environments.
 
-##### Disadvantages Of using Call By Value Mechanism
+### Disadvantages Of using Call By Value Mechanism
 
 1. **Performance Overhead:**
 Copying large data structures can incur a performance overhead, especially when dealing with complex objects. This overhead may affect the program's efficiency and speed, particularly in cases where frequent function calls occur with substantial data.
@@ -99,11 +101,13 @@ Since Call by Value involves working with copies of the original data, there is 
 For simple and small data types (like integers or characters), the overhead of copying values may be negligible. In such cases, the advantages of Call by Value might not be as pronounced.
 
 
-#### Call By Reference Mechanism
-    * In `call by reference` method of calling a function, we pass the memory address of that value, instead of the actual value.
-    * What does it mean? Basically what happens is, when we are passing the memory address of the variable, we are not passing a copy of the variable, instead, we are passing that variable itself. And because the variable is now accessed using its memory location, any updation that happens inside the function's body, will show its effects on the main value as well. As now eveything is happening on the main value, instead of a copied value.
+## Call By Reference Mechanism
+* In `call by reference` method of calling a function, we pass the memory address of that value, instead of the actual value.
 
-    * Lets implement it using a simple C program
+* What does it mean? Basically what happens is, when we are passing the memory address of the variable, we are not passing a copy of the variable, instead, we are passing that variable itself. And because the variable is now accessed using its memory location, any updation that happens inside the function's body, will show its effects on the main value as well. As now eveything is happening on the main value, instead of a copied value.
+
+* Lets implement it using a simple C program
+
 ```c
 // WAP to swap to integer values.
 #include<stdio.h>
@@ -139,7 +143,7 @@ void main()
 ```
 
 
-##### Advantages Of using Call By Reference Mechanism
+### Advantages Of using Call By Reference Mechanism
 
 1. **Modification of Actual Parameters:**
 Call by Reference allows a function to modify the values of the actual parameters directly. Changes made to the formal parameters inside the function are reflected in the original variables outside the function.
@@ -174,7 +178,7 @@ In scenarios where resources like file handles or network connections need to be
 Call by Reference can help avoid the use of global variables for communication between functions. Instead, functions can communicate through the parameters passed by reference.
 
 
-##### Disadvantages Of using Call By Reference Mechanism
+### Disadvantages Of using Call By Reference Mechanism
 
 1. **Complexity and Readability:**
 Call by Reference can make code more complex and potentially harder to read, especially when it's not immediately clear whether a function modifies the values of its parameters. This can impact code maintainability.
