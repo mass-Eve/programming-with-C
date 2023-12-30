@@ -8,6 +8,8 @@
 
 * Any problem that can be solved recursively, can also be solved iteratively (using loops).
 
+* Sometimes, also called by *Circular Definition*.
+
 #### Q. How To Implement Recursion?
 01. The case at which the function doesn't recur is called the **_base case_**.
 02. The instances where the function keeps calling itself to perform a sub-task is called the **_recursive case_**. Basically, the case which is not the base case, is the recursive case.
