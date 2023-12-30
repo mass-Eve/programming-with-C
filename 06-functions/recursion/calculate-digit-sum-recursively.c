@@ -19,7 +19,10 @@ int recur(int num, int sum)
 
 void main()
 {
-    int num = 1256;
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    
     int sum = 0;
 
     printf("sum of %d's individual digits is: %d\n", num, recur(num, sum));
