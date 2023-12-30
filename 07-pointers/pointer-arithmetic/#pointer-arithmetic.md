@@ -13,6 +13,7 @@
 
 ```c
 // WAP to traverse through an array one by one element and also print the memory address of that element, all using pointers only. 
+
 #include<stdio.h>
 void main(){
 
@@ -32,7 +33,7 @@ void main(){
         // To print the value stored in the array <marks> at the following memory address stored in the pointer.
         printf("array value using pointer: %d\n", *mp);
 
-        // Since values in an array are stored in continuou memory locations, increment the memory address by 1 can give us the memory address of the next element of the array.
+        // Since values in an array are stored in continuou memory locations, incrementing the memory address by 1 can give us the memory address of the next element of the array.
         mp++;
         // or
         // mp = mp + 1;
@@ -44,6 +45,7 @@ void main(){
 
 ```c
 // WAP to traverse through an array one by one element and also print the memory address of that element, all using pointers only. 
+
 #include<stdio.h>
 void main(){
 
@@ -63,11 +65,38 @@ void main(){
         // To print the value stored in the array <marks> at the following memory address stored in the pointer.
         printf("it memory address: %p\n", mp);
 
-        // Since values in an array are stored in continuou memory locations, increment the memory address by 1 can give us the memory address of the next element of the array.
+        // Since values in an array are stored in continuou memory locations, deccrementing the memory address by 1 can give us the memory address of the next element of the array.
         mp--;   
         // or
         // mp = mp - 1;
     }
+}
+```
+
+### 05. Subtracting Two Pointers of the same type.
+
+```c
+// WAP to subtract two number using there pointers
+
+#include<stdio.h>
+void main()
+{
+    int a = 12, *x;
+    x = &a;
+    int b = 6.8, *y;
+    y = &b;
+    int c = a - b;
+
+    printf("Normally!!\n");
+    printf("a: %d\n", a);
+    printf("b: %d\n", b);
+    printf("c = a - b: %d\n", c);
+
+    int sub = *x - *y;
+    printf("Using Pointers!!\n");
+    printf("a: %d\n", *x);
+    printf("b: %d\n", *y);
+    printf("c = a - b: %d\n", sub);
 }
 ```
 
@@ -76,6 +105,7 @@ void main(){
 Example 1 -->
 ```c
 // WAP to arrange or sort the elements of an array in ascending order. 
+
 #include<stdio.h>
 void main()
 {
@@ -106,6 +136,7 @@ void main()
 Example 2 -->
 ```c
 // WAP to arrange or sort the elements of an array in descending order. 
+
 #include<stdio.h>
 void main()
 {
