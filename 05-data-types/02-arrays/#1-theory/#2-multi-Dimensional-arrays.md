@@ -19,7 +19,21 @@ int matrix[2][2] = { {1, 1}, {2, 2} };
         [ 2 2 ] 
                   ]
 
+* *Important Point* - While declaring a multi-dimensional array, it is mandatory to mention the number of columns in the declaration phase, and mentioning the number of rows is not a necessary thing.
+ Example ~
+```c
+// rows = 2 (horizontal)
+// columns = 3 (vertical)
+int arr[2][3] = {1, 2, 3, 4}
+
+
+// rows =  (horizontal)
+// columns = 4 (vertical)
+int arr2[][4] = {1, 2, 5, 8, 6, 87};
+```
+
 * To access the element of an array, we have to specify the index of both rows and columns.
+
 ### Syntax Of Accesing The Elements Of An Array using printf() statements -->
 ```c
 int matrix[2][2] = { {1, 1}, {2, 2} };
