@@ -1,3 +1,5 @@
+## Limitations Of Functions In C
+
 1. **No Nested Functions:**
 C does not support the definition of functions inside other functions. Each function must be defined at the global or file scope.
 
