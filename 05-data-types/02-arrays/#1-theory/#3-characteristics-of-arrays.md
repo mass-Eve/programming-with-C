@@ -59,7 +59,7 @@
     int matrix[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
     ```
 
-10. **Array Decay:** When passing an array to a function, it "decays" into a pointer to its first element. This means that the function receives a pointer to the array's first element rather than a copy of the entire array.
+10. **Array Decay:** When passing an array to a function, it "decays" into a pointer to its first element. This means that the function receives a pointer to the array's first element rather than a copy of the entire array. It could be any function, `printf()`, `scanf()` or even a `user-defined` one.
 
     ```c
     void printArray(int arr[], int size) {

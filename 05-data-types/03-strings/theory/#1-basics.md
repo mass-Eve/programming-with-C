@@ -17,7 +17,7 @@
 * The null character is included in the length of the string.
 * Suppose you create a string "ankur", then its length will be 6.
 
-### Synatx Of Declaring Strings In C
+## Synatx Of Declaring Strings In C
 
 ```c
 // Method 1

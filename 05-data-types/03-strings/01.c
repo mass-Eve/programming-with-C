@@ -33,11 +33,32 @@ void main()
     // printf("\n");
 
 
-    char name2[] = "john";
-    char *np = name2;
-    for (int i = 0; i < sizeof(name2) - 1; i++)
-    {
-        printf("%c | ", *np);
-        *np ++;
-    }
+    // char name2[] = "john";
+    // char *np = name2;
+    // for (int i = 0; i < sizeof(name2) - 1; i++)
+    // {
+    //     printf("%c | ", *np);
+    //     *np ++;
+    // }
+
+    // char name3[] = {};
+    // printf("Enter your name: ");
+    // scanf("%s", name3);
+
+    // printf("name: %s", name3);
+    
+    // scanf("%['^\n]s", name3);
+    // printf("name: %s", name3);
+
+    // gets(name3);
+    // printf("name: %s", name3);
+    // puts("Hi");
+    // puts(name3);
+
+
+    // char name4[] = "christine";
+
+    // printf("%d\n", &name4[0]);
+    // printf("%d\n", name4);
+
 }
