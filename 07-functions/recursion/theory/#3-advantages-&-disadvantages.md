@@ -72,5 +72,5 @@ C compilers may not always perform tail call optimization, a technique that allo
    - Not all problems are well-suited for recursive solutions. 
    - Some problems are solved best with iterative approach, and attempting to force recursion can lead to unnecessary complexity.
 
-10. **Difficulty in Analysis:**
+10. **Difficulty in Analysis Of Complexities:**
 Analyzing the time and space complexity of recursive algorithms can be more complex compared to iterative algorithms.
