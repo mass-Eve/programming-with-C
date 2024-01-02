@@ -26,7 +26,7 @@ There are four types of storage classes in C.
 <!-- ### Features Of Variables defined under Automatic Storage Classes.
 01. The values of the variable is stored in the memory -->
 
-| Storage Class Type | Where they are stored? | How To Declare | Default initial value | Scope | Lifespan |
+| Storage Class Type | Where they store the values? | How To Declare | Default initial value | Scope | Lifespan |
 | :----------------: | :--------------------: | :------------: | :-------------------: | :---: | :------: |
 | Automatic | Memory | using `auto` keyword | An unpredicted value, also known as `GARBAGE VALUE` | Local to the block in which the variable is defined. | Till the control remains within the block in which the variable is defined. |
 | Register | CPU Registers | using `register` keyword | An unpredicted value, also known as `GARBAGE VALUE` | Local to the block in which the variable is defined. | Till the control remains within the block in which the variable is defined. | 
