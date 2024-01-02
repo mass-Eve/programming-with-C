@@ -2,9 +2,9 @@
 
 * A string is a sequence of characters stored in an array, typically terminated by a null character ('\0'). 
 
-* In C programming, does not have a built-in string data type, so strings are usually represented as arrays of characters.
+* In C programming, there's no built-in string data type, so strings are usually represented as arrays of characters.
 
-* The way a group of integers can be contained (or stored) in an array.
+* The way a group of integers can be contained (or stored) in an array, the same way, characters can also be stored in an array. When those characters are terminated by a null character, it becomes a string.
 
 * We can also say that, *__Character Arrays[]__* in C language are referred to as Arrays.
 

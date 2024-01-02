@@ -1,4 +1,4 @@
-### Recieving Single Words Only ~
+## Recieving Single Words Only ~
 
 ```c
 #include<stdio.h>
@@ -21,6 +21,8 @@ void main()
 
 * Although we can solve this problem of `scanf()` function, but it is not advised to use this functionality.
 
+## Recieving Multiple Words  ~
+
 ```c
 #include<stdio.h>
 void main()
@@ -39,7 +41,7 @@ void main()
     name: John Kris
 ```
 
-#### No '&' in scanf(), why?
+### No '&' in scanf(), why?
 * As we all know that `scanf()` requires the address of the variable where the value has to be stored. and to do the same, we use '&'. But why no `ampersand` is used while accepting a string from the user using `scanf()` ?
 
 * Let's understand this. 
@@ -51,7 +53,7 @@ void main()
     
     * But wait what? An array variable will be having array-contents as it's value, then how the array is storing the memory address of the first element inside it as it's variable's value! This is not making any sense! 
 
-* Let's make some sense this as well.
+* Let's make some sense of this as well.
     * first of all, Arrays in C inherently behave like pointers, especially when used as function arguments. 
     * When you pass the name of an array to a function like `scanf()`, it's treated as a pointer to the first element of the array. 
     * Contrary to other variables in C, arrays store the memory address of their first element as their value. So, when you pass a string identifier to `scanf()`, it's essentially passing a pointer to the memory location where the string is stored.
