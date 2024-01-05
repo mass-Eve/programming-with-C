@@ -29,7 +29,7 @@ void main()
 >>> error: assignment to expression with array type
 ```
 
-## Type2(a) - Taking String as lvalue and a Character Constant as rvalue
+## Type2(a) - Taking String as lvalue and a Character Array (or Double Quote String) as rvalue
 
 ```c
 #include<stdio.h>
@@ -106,7 +106,7 @@ void main()
 ```
 
 
-## Type4 - Taking String-Array on both sides 
+## Type4 - Taking String-Array on both sides (with indexing)
 
 ```c
 #include<stdio.h>
@@ -155,3 +155,11 @@ void main()
 >>> 
     s1: Margret
 ```
+
+## When To Use What ?
+* Clearly, it is complicated! No one can deny the fact that for a beginner, it is complicated to understand which method to use when? and how can I recall all of them so that I can avoid the pitfalls?
+
+* Well the answer to these questions is a lot of practice. Practicing ypur programs with all these different methods is the only way possible to understand which one is suitable when?
+
+* But here's a list of when to use what, and which is the best choice for string-assignment and updation related things ~
+
