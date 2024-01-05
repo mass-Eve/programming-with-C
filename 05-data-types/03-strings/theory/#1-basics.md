@@ -10,7 +10,7 @@
 
 * A string constant is a 1D-Array of characters, terminated by a null character ('\0')
 
-* Each character in an character array takes one-byte space and the last character is always a null character or '\0'. 
+* Each character in an character array takes exactly one-byte of space and the last character is always a null character or '\0'. 
 
 ### But What is this null character ('\0') 
 * It is a special character used to denote the end of a string. The null character is used as a sentinel value to indicate the termination point of a character array or string.
@@ -54,6 +54,22 @@ void main()
 }
 >>> name: john
 ```
+
+
+### Printing A String Normally
+No need of dereferencing.
+```c
+#include<stdio.h>
+void main()
+{
+    char name[] = "john";
+    char *np = name;
+
+    printf("name: %s\n", np);
+}
+>>> name: john
+```
+
 
 ### Traversing A String Using for loop
 
@@ -123,6 +139,7 @@ void main()
 }
 ```
 
+Note - Once strings are declared, they can not be re-assigned.
 
 
 
