@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main()
+void main()
 {
     for (int i = 1; i <= 5; i++)
     {
@@ -22,9 +22,6 @@ int main()
             else
                 printf("* ");
         }
-        printf("\n");
-        
+        printf("\n");   
     }
-
-    return 0;
 }
