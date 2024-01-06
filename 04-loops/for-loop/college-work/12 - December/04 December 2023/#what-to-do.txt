@@ -1,3 +1,0 @@
-Pattern Printing Programs
-
-In these programs, you have to print a certain kind of pattern which can be either of digits or characters (basically any alpha-numeric character)
