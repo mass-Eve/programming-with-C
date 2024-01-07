@@ -13,5 +13,5 @@ void main()
         int rem = nc % 10;
         sum += (rem*rem);
     }
-    printf("sum of the individual digits of %d = %d", num, sum);
+    printf("The sum of the squares of the individual digits of %d = %d", num, sum);
 }
