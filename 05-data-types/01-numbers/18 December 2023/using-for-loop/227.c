@@ -2,8 +2,6 @@
 
 void main()
 {
-    // printf("Hello World");
-
     int num;
     printf("Enter a number: ");
     scanf("%d", &num);
