@@ -6,14 +6,20 @@
 
 void main()
 {
-    int num, num_sq = 0;
-
+    int num;
     printf("Enter a number: ");
     scanf("%d", &num);
+    int nc = num;
+    int num_sq = num * num;
+    int count = 0;
 
-    num_sq = num * num;
-
-    if ((num_sq % 100) == num)
+    for (int i = 1; i < nc; nc /= 10)
+    {
+        count++ ;
+    }
+    int base = pow(10, count);
+    
+    if ((num_sq % base) == num)
     {
         printf("Yes. It is an Automorphic Number.");
     }
