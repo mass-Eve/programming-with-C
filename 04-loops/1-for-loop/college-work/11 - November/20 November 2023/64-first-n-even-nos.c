@@ -5,17 +5,15 @@
 
 void main()
 {
-    int i, n;
+    int n;
 
-    printf("Enter the last term here:");
+    printf("Enter the total no. of terms:");
     scanf("%d", &n);
 
-    for (i = 1; i <= n; i++)
+    for (int i = 1; i <= n; i++)
     {
-        if (i % 2 == 0)
-        {
-            printf("%d, ", i);
-        }
+        // even numbers = (i * 2)
+        printf("%d, ", i*2);
     }
 
     // getch();

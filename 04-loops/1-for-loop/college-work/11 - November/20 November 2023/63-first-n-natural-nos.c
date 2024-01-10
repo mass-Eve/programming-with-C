@@ -5,12 +5,12 @@
 
 void main()
 {
-    int i, n;
+    int n;
 
-    printf("Enter the value of n here:");
+    printf("Enter the total no. of terms, n:");
     scanf("%d", &n);
 
-    for (i = 1; i <= n; i++)
+    for (int i = 1; i <= n; i++)
     {
         printf("%d, ", i);
     }

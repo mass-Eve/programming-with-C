@@ -5,17 +5,15 @@
 
 void main()
 {
-    int i, n;
+    int n;
 
-    printf("Enter n here:");
+    printf("Enter the total no. of terms, n:");
     scanf("%d", &n);
 
-    for (i = 1; i <= n; i++)
+    for (int i = 0; i < n; i++)
     {
-        if (i % 2 != 0)
-        {
-            printf("%d, ", i);
-        }
+        // odd numbers = (i*2 + 1)
+        printf("%d, ", (i*2 + 1));
     }
 
     // getch();
