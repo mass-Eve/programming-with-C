@@ -85,9 +85,9 @@ Feel free to connect with me! Let's learn and grow together.
 
 Here are some helpful articles that are written by me only, which might help you when you will get some Strange kind of thought about some concepts in C
 
-- (Why There Is No Built-in String Data Type In C ?)[https://www.linkedin.com/posts/ankoor-agarwal_cprogramming-strings-programminglanguages-activity-7148709276532867072-zM4w?utm_source=share&utm_medium=member_desktop]
+- (Why There Is No Built-in String Data Type In C ?) [https://www.linkedin.com/posts/ankoor-agarwal_cprogramming-strings-programminglanguages-activity-7148709276532867072-zM4w?utm_source=share&utm_medium=member_desktop]
 
-- (A Simple Analogy To Understand Calling Mechanisms In C)[https://www.linkedin.com/posts/ankoor-agarwal_c-cprogramminglanguage-functions-activity-7147595792772440064-Rz0A?utm_source=share&utm_medium=member_desktop]
+- (A Simple Analogy To Understand Calling Mechanisms In C) [https://www.linkedin.com/posts/ankoor-agarwal_c-cprogramminglanguage-functions-activity-7147595792772440064-Rz0A?utm_source=share&utm_medium=member_desktop]
 
 ## Contributions
 
