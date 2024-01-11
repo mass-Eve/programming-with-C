@@ -6,19 +6,20 @@
 
 void main()
 {
-    int num, sum_check = 0;
+    int num;
 
     printf("Enter a number: ");
     scanf("%d", &num);
 
+    int sum = 0;
     for (int i = 1; i <= (num/2); i++)
     {
         if (num % i == 0)
         {
-            sum_check += i;
+            sum += i;
         }
     }
-    if (sum_check == num)
+    if (sum == num)
     {
         printf("The number %d is a perfect number.", num);
     }

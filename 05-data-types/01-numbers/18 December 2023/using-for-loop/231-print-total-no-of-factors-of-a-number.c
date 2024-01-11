@@ -5,11 +5,12 @@
 
 void main()
 {
-    int num, count = 1;
-
+    int num;
     printf("Enter a number: ");
     scanf("%d", &num);
 
+    // A variable storing the total number of factors of the number. It is initialised as 1 because the number is itself a factor it.
+    int count = 1;
     for (int i = 1; i <= (num/2); i++)
     {
         if (num % i == 0)
