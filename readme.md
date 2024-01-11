@@ -32,14 +32,18 @@ Feel free to connect with me! Let's learn and grow together.
 ## Code Structure
 
 - The first folder is the *basic folder*.
-    - [01-basic-programs](01-basic-programs)
+    - [Basics Of C](01-basic-programs)
     - It contains information about the basic building blocks of our beloved _C Language_.
+
 - The Second folder is about Basic Arithmetic Problems.
+    - [Arithmetic Operations In C](02-Calculation Programs)
     - It includes a notes file (in the markdown format), containing knowledge about Arithmetic Operators In C.
     - Then in another file, it contains information about the *Standard Mathematics Header File* In C.
     - Then, a lot of problems to practice.
     - The best part about the problems is that they are the problems that we have studied from class 1-12. As a result, we already know the formula and logic behind the problem, all we need to do is that convert that mathematical logic n terms of programming logic. That's it......
-- The Third folder is about Relational & Logical Thinking. 
+
+- The Third folder is about Relational & Logical Thinking.
+    - [Relational & Logical Operations](03-comparision-programs or condition-statements)
     - It includes a notes file containing the information about Relational and Logical Operators offered In C.
     - Then it gives information about the structures that we can use to implement those relational and logical operators in order to see them in **quick-real-action**. These structures include ~
         01. if-else ladder.
@@ -47,7 +51,9 @@ Feel free to connect with me! Let's learn and grow together.
     - Then, a lot of problems to solve.
     - This folder specifically contain a lot of problems inspired from our daily life problems. So you are definitely going to enjoy them.
     - This folder is a must for activating your logical mind.
+
 - The Fourth folder is about Looping.
+
     - Looping is a very essential concept in any programming language.
     - The first file in this folder will let you start your journey with loops very very easily by giving you the easy to understand syntax.
     - After this, you will be exposed to an exhaustive list of questions to practice in all the three loops.
