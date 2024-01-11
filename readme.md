@@ -36,14 +36,12 @@ Feel free to connect with me! Let's learn and grow together.
     - It contains information about the basic building blocks of our beloved _C Language_.
 
 - The Second folder is about Basic Arithmetic Problems.
-    - [Arithmetic Operations In C](02-Calculation Programs)
     - It includes a notes file (in the markdown format), containing knowledge about Arithmetic Operators In C.
     - Then in another file, it contains information about the *Standard Mathematics Header File* In C.
     - Then, a lot of problems to practice.
     - The best part about the problems is that they are the problems that we have studied from class 1-12. As a result, we already know the formula and logic behind the problem, all we need to do is that convert that mathematical logic n terms of programming logic. That's it......
 
 - The Third folder is about Relational & Logical Thinking.
-    - [Relational & Logical Operations](03-comparision-programs or condition-statements)
     - It includes a notes file containing the information about Relational and Logical Operators offered In C.
     - Then it gives information about the structures that we can use to implement those relational and logical operators in order to see them in **quick-real-action**. These structures include ~
         01. if-else ladder.
@@ -59,29 +57,45 @@ Feel free to connect with me! Let's learn and grow together.
     - After this, you will be exposed to an exhaustive list of questions to practice in all the three loops.
     - The list is very exhaustive and is curated by my hands.
     - There will be time when you will see multiple implementations of the solution to the same problem.
+
 - The Fifth folder will introduce you to problems regarding numbers.
+
     - There are different kinds of numbers in mathematics, and all of them have some different kinds of properties. You'll make programs regarding those properties.
     - Apart from this, you will also do some manipulation on numbers.
     - Trust me, it will be really fun.
+
 - The Sixth folder is about Arrays.
+
     - This is where things will start getting crazy, as well as tough. 
     - It is possible that for a moment, you might start thinking that you have not learned anything yet! But it happens. 
     - And you need not to worry at all. Because I have also faced those problems and I have made it sure that anyone learning from my repository should not face the same.
+
 - In Seventh folder, we'll move to *Strings*, which is basically another type of Arrays. 
+
     - For this section, please be 100% focussed while learning!
     - This topic is actually tough to understand because many things will be completely new to you.
     - But make sure not to worry.
+
 - In Eight folder, we'll move to pointers.
+
     - Pointers is a real challenge for our understanding. Because it really challenges our beliefs that we have set till now.
     - Be 100% focussed here as well.
+
 - In Ninth folder, you will encounter Functions.
+
     - Crazy topic.
     - It will implement everything that you have learned till now.
     - Along with some crazy new concepts.
+
 - Tenth folder is about Recursion
+
     - *Recursion*, which is basically another type of function, is another real big challenge for our understanding.
+
 - Eleventh Folder is about Unions and Structures.
+
+
 - Twelth Folder is about File Handling With C Language.
+
     - It includes how you can manipulate text files using C Language.
 
 ## Resources
