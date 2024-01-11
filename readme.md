@@ -32,7 +32,7 @@ Feel free to connect with me! Let's learn and grow together.
 ## Code Structure
 
 - The first folder is the *basic folder*.
-    - [](programming-with-C/01-basic-programs)
+    - [01-basic-programs](programming-with-C/01-basic-programs)
     - It contains information about the basic building blocks of our beloved _C Language_.
 - The Second folder is about Basic Arithmetic Problems.
     - It includes a notes file (in the markdown format), containing knowledge about Arithmetic Operators In C.
