@@ -19,7 +19,7 @@ void main()
         scanf("%d", &array[i]);
     }
 
-    // Printing the contents of array reversing
+    // Printing the contents of main array
     printf("Elements in the main array: \n");
     for (int j = 0; j < n; j++)
         printf("%d, ", array[j]);
@@ -28,7 +28,7 @@ void main()
     int *ap = array;
 
     // A reverse array having the elements of the main array in reversed format
-    int rev_array[5];
+    int rev_array[n];
 
     // Accessing elements of the main array in reverse order and appending them in the rev_array;
     for (int k = n - 1 ; k >= 0; k--)
@@ -37,7 +37,7 @@ void main()
         *ap++ ;
     }
 
-    // printing the rev_array
+    // printing the contents of the rev_array
     printf("\nElements in the reversed array: \n");
     for (int l = 0; l < n ; l++)
     {
