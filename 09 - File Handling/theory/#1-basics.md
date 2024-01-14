@@ -47,5 +47,5 @@ Before learning to open and close a file in C, there are a bunch of things to kn
 * File opening modes are simple english alphabets, which specify the file operations that are allowed on a file which is about to get open. 
 * They are like the rules governing the file handling process, telling the compiler what functionalities to enable for the user to manipulate.
 * They are also known as *Access Modes*.
-* They are passed as an argument to the `fopen()` function.
+* They are passed as the second argument, quoted with double quotes, to the `fopen()` function.
 * The various file opening modes available in 'C'. 
