@@ -1,13 +1,19 @@
+// WAP to open a text file and append some name into it.
+
 #include<stdio.h>
 
 void main()
 {
+    // Create a file pointer
     FILE *fp;
 
-    char dataToBeWritten[100] = "using 'a' mode ~ \nJohn \nChristine Palmer \nDennis";
+    // Create a string array having the data, which has to be appened in the file
+    char dataToBeAppended[100] = "using 'a' mode ~ \nJohn \nChristine Palmer \nDennis";
 
-    fp = fopen("names2.txt", "a");
+    // Open the file in append mode
+    fp = fopen("names3.txt", "a");
 
+    // Check if the file is opened successfully or not!
     if (fp == NULL)
     {
         printf("Can not!\n");
@@ -15,9 +21,11 @@ void main()
     else{
         printf("Opened...\n");
 
-        fputs(dataToBeWritten, fp);
+        // This will append all the data inside the <dataToBeAppended> variable
+        fputs(dataToBeAppended, fp);
         fputs("\n", fp);
 
+        // Close the file
         fclose(fp);
     }
 }
