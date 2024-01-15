@@ -171,5 +171,51 @@ void main()
 }
 ```
 
-## Assigning values to the elements of a Structure
+## Accessing Values Inside A Structure Variable
+### Method 1 ~
+using `printf()` statements
 
+```c
+#include<stdio.h>
+
+void main()
+{
+    // A structure <book>
+    struct book {
+
+        // Name of the book
+        char name[100];
+
+        // Price of the book
+        int price;
+
+        // Total pages in the book
+        int pages;
+    };
+
+    struct book b1 = {"Lets' Learn C", "Github Publications", 1234, 299, 400};
+
+    printf("The name of the book: %s\n", b1.name);
+    printf("The publication of the book: %s\n", b1.publication);
+    printf("The ISBN Number of the book: %d\n", b1.isbn);
+    printf("The price of the book: Rs %d\n", b1.price);
+    printf("The number of pages in the book are: %d\n", b1.pages);
+}
+```
+
+### Method 2 ~
+using for loop
+
+```c
+
+```
+
+
+
+
+
+
+
+
+
+# Default values 
