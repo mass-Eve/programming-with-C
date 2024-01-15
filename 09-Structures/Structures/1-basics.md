@@ -12,8 +12,11 @@
 
 Lets' understand this with a _Analogy_.
 * We are humans. The creator of this repo is a human, the person who is reading and learning from this repo is also a human.
-* Now all human beings have certain features or identifications. Isn't it ?
+
+* Now all human beings have certain features or identifications, some of them are completely unique to that person and some are kinda similar. Isn't it ?
+
 * We have height, name, age, gender etc.....
+
 * Now lets' say I want to create a C program storing these piece of information for a single person, what should I do? Simple. Create separate variables, like this .....
 
 ```c
@@ -23,7 +26,7 @@ int height;
 char gender[1];
 ```
 
-* What if I want to store the details of 3 such persons ? Simple. Create an array, like this .....
+* What if I want to store the details of 3 such persons ? Simple. Create an array for each detail or property, like this .....
 
 ```c
 char name[3] = {"John", "Chris", "Christine", "\0"};
@@ -38,7 +41,7 @@ char gender[3] = {'M', 'M', 'F'};
 
 * What if I want to store the details of 1000 such peoples ? Certainly, we can do copy paste, can't we ? But what about 10,000 such people ? Maybe, the limit has arrived !!
 
-* In such cases, it is ideal to use a structure. A *structure* allows us to group the related variables into one and we can create multiple instances of that strcuture intead of creating multiple variables with similar looking identifiers, which makes things confusing.
+* In such cases, it is ideal to use a structure. As, a *structure* allows us to group the related variables under one single identification (or name) and we can create multiple instances of that strcuture intead of creating multiple variables with similar looking identifiers, which makes things confusing.
 
 ## Creating Structures
 
@@ -220,17 +223,17 @@ struct book {
     int pages;
 };
 ```
-Now when we create a variable, like this 
+Now when we create a structure variable, like this 
 ```c
 struct book b1;
 ```
-Certainly, we want to say that *"we are creating a variable which will store details of book 1", isn't it?*
+Certainly, we want to say that *"we are creating a variable which will store details of book 1 and these details will be according to the elements in the structure `book`", isn't it?*
 
-But when we create a structure variable, which is also an array, like this 
+But when we create a structure variable which is also an array, like this 
 ```c
 struct book b1[4];
 ```
-From the above declaration, the compiler understand it as ~ "*You have created an array from a structure `book`, and each element of this array will be a structure variable.*"
+From the above declaration, the compiler understand it as ~ "*You have created an array from a structure `book`, and each element of this array will be a structure variable, and the structure is `book`.*"
 
 I know it might be a bit confusing, but the following ilustration will make it clear.
 ```c
@@ -244,13 +247,16 @@ struct book {
 // Suppose it to be a book carton containing 5 books
 struct book b[5];
 
-{ {name, price, pages}, {name, price, pages}, {name, price, pages}, {name, price, pages}, {name, price, pages} }
+               b[0]                  b[1]                  b[2]                  b[3]                  b[4]
+b == { {name, price, pages}, {name, price, pages}, {name, price, pages}, {name, price, pages}, {name, price, pages} }
+
 ```
 
 In this way, there are `book0`, `book1`, `book2`, `book3`, `book4` ; inside the `b book` array
 
+Enough Information !!! Lets' move to the main topic ~
 
-#### Method 2(a) - *using for loop*
+#### Method 2(a) - *accessing using for loop*
 
 ```c
 #include<stdio.h>
@@ -283,7 +289,7 @@ void main()
 }
 ```
 
-#### Method 2(b) - *using while loop*
+#### Method 2(b) - *accessing using while loop*
 
 ```c
 #include<stdio.h>
@@ -318,7 +324,7 @@ void main()
 }
 ```
 
-#### Method 2(c) - *using do-while loop*
+#### Method 2(c) - *accessing using do-while loop*
 
 ```c
 #include<stdio.h>
@@ -357,9 +363,9 @@ void main()
 
 There is no direct way to initialise default values to some or all elements of the structure.
 
-What ?
+What does it mean?
 
-Basically, this is not possible in C !
+Basically, what's been done on <line 12>, is not possible in C !
 ```c
 #include<stdio.h>
 
