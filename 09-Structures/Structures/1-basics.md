@@ -128,9 +128,10 @@ struct book {
 
 Okay, that was enough about creating structures. Lets' move to the next topic.....
 
-## What about actually using them ? How to implement them ? How To Access A Structure ? 
+## How To Access A Structure ? 
 Lets' see how can we use a structure.
 * We can create a `structure <identifier> variable` to use that structure
+
 ```c
 // WAP to create a book using a Structure
 
@@ -161,19 +162,230 @@ void main()
 
     // Now a book has been created and all the variables declared inside the structure are now can be used to store the details of this book without even creating any new variable 
     struct book b1 = {"Lets' Learn C", "Github Publications", 1234, 299, 400};
+}
+```
+
+## Accessing Values Inside A Structure Variable
+
+### Method 1 ~
+*using `reference method` statements*
+* In this method, we use the *`dot operator`* to reference a particular member of a structure, using its structure variable.
+* Syntax ~ 
+```c
+printf("<format-specifier>", <structure-variable>.<element-identifier>);
+```
+
+Example - 
+```c
+#include<stdio.h>
+
+void main()
+{
+    // A structure <book> to store book details
+    struct book {
+
+        // Name of the book
+        char name[100];
+
+        // Price of the book
+        int price;
+
+        // Total pages in the book
+        int pages;
+    };
+
+    struct book b1 = {"Lets' Learn C", "Github Publications", 1234, 299, 400};
 
     printf("The name of the book: %s\n", b1.name);
     printf("The publication of the book: %s\n", b1.publication);
     printf("The ISBN Number of the book: %d\n", b1.isbn);
     printf("The price of the book: Rs %d\n", b1.price);
     printf("The number of pages in the book are: %d\n", b1.pages);
-
 }
 ```
 
-## Accessing Values Inside A Structure Variable
-### Method 1 ~
-using `printf()` statements
+### Method 2 ~
+*using looping statements*
+
+*__But before that, understand the following things carefully.......__*
+
+01. To use a loop to iterate through a structure variable, we have to create a structure variable which is an array and not a simple data variable.
+
+02. When creating a structure variable which is also an array, things work a little different than the usual one and understanding them without an example is impossible. So here is one example to understand it.
+```c
+// A simple array to store the details about a book
+struct book {
+    char name[100];
+    int price;
+    int pages;
+};
+```
+Now when we create a variable, like this 
+```c
+struct book b1;
+```
+Certainly, we want to say that *"we are creating a variable which will store details of book 1", isn't it?*
+
+But when we create a structure variable, which is also an array, like this 
+```c
+struct book b1[4];
+```
+From the above declaration, the compiler understand it as ~ "*You have created an array from a structure `book`, and each element of this array will be a structure variable.*"
+
+I know it might be a bit confusing, but the following ilustration will make it clear.
+```c
+// A simple array to store the details about a book
+struct book {
+    char name[100];
+    int price;
+    int pages;
+};
+
+// Suppose it to be a book carton containing 5 books
+struct book b[5];
+
+{ {name, price, pages}, {name, price, pages}, {name, price, pages}, {name, price, pages}, {name, price, pages} }
+```
+
+In this way, there are `book0`, `book1`, `book2`, `book3`, `book4` ; inside the `b book` array
+
+
+#### Method 2(a) - *using for loop*
+
+```c
+#include<stdio.h>
+
+void main()
+{
+    // A structure <book>
+    struct book {
+
+        // Name of the book
+        char name[100];
+
+        // Price of the book
+        int price;
+
+        // Total pages in the book
+        int pages;
+    };
+
+    // Book Carton 1
+    struct book b1[3] = {{"Learn C", 299, 400}, {"Learn Python", 350, 341}, {"Learn Markdown", 150, 83}};
+
+    for (int i = 0; i < 3; i++)
+    {
+        printf("name of the book: %s\n", b1[i].name);
+        printf("price of the book: %d\n", b1[i].price);
+        printf("total pages in the book: %d\n", b1[i].pages);
+        printf("\n");
+    }
+}
+```
+
+#### Method 2(b) - *using while loop*
+
+```c
+#include<stdio.h>
+
+void main()
+{
+    // A structure <book>
+    struct book {
+
+        // Name of the book
+        char name[100];
+
+        // Price of the book
+        int price;
+
+        // Total pages in the book
+        int pages;
+    };
+
+    // Book Carton 1
+    struct book b1[3] = {{"Learn C", 299, 400}, {"Learn Python", 350, 341}, {"Learn Markdown", 150, 83}};
+
+    int i = 0;
+    while (i < 3)
+    {
+        printf("name of the book: %s\n", b1[i].name);
+        printf("price of the book: %d\n", b1[i].price);
+        printf("total pages in the book: %d\n", b1[i].pages);
+        printf("\n");
+        i++ ;
+    }
+}
+```
+
+#### Method 2(c) - *using do-while loop*
+
+```c
+#include<stdio.h>
+
+void main()
+{
+    // A structure <book>
+    struct book {
+
+        // Name of the book
+        char name[100];
+
+        // Price of the book
+        int price;
+
+        // Total pages in the book
+        int pages;
+    };
+
+    // Book Carton 1
+    struct book b1[3] = {{"Learn C", 299, 400}, {"Learn Python", 350, 341}, {"Learn Markdown", 150, 83}};
+
+    int i = 0;
+    do {
+        printf("name of the book: %s\n", b1[i].name);
+        printf("price of the book: %d\n", b1[i].price);
+        printf("total pages in the book: %d\n", b1[i].pages);
+        printf("\n");
+        i++ ;
+    } while (i < 3);
+}
+```
+
+# Default values for some elements in the structure ?
+**NO**
+
+There is no direct way to initialise default values to some or all elements of the structure.
+
+What ?
+
+Basically, this is not possible in C !
+```c
+#include<stdio.h>
+
+void main()
+{
+    // A structure <book>
+    struct book {
+
+        // Name of the book
+        // char name[100];
+
+        // Price of the book
+        int price = 200;        // Wrong
+
+        // Total pages in the book
+        // int pages;
+    };
+
+    struct book b1;
+}
+```
+
+## Assigning values to the elements of a Structure
+There are many ways in which we can assign values to a structure variable.
+
+### 01. Direct Initialisation while the Declaration phase.
 
 ```c
 #include<stdio.h>
@@ -203,19 +415,176 @@ void main()
 }
 ```
 
-### Method 2 ~
-using for loop
+### 02. Assigning values One-by-One
 
 ```c
+#include<stdio.h>
+#include<string.h>
 
+void main()
+{
+    // A structure <book>
+    struct book {
+
+        // Name of the book
+        char name[100];
+
+        // publication of the book
+        char publication[100];
+
+        // ISBN number of the book
+        int isbn;
+
+        // Price of the book
+        int price;
+
+        // Total pages in the book
+        int pages;
+    };
+
+    // A structure book variable
+    struct book b1 ;
+    
+    // These two will return error as strings can't be re-assigned
+    // b1.name = "Lets' Learn C";
+    // b1.publication = "Github Publications";
+
+    // To solve this issue, we'll make use of strcpy() function of the strings library
+    strcpy(b1.name, "Lets' Learn C");
+    strcpy(b1.publication, "Github Publications");
+
+    b1.isbn = 1234;
+    b1.price = 299;
+    b1.pages = 400;
+
+    printf("The name of the book: %s\n", b1.name);
+    printf("The publication of the book: %s\n", b1.publication);
+    printf("The ISBN Number of the book: %d\n", b1.isbn);
+    printf("The price of the book: Rs %d\n", b1.price);
+    printf("The number of pages in the book are: %d\n", b1.pages);
+}
 ```
 
+### 03. Assigning Values Using Looping Statements
 
+#### *using for loop*
 
+```c
+#include<stdio.h>
 
+void main()
+{
+    // A structure <book>
+    struct book {
 
+        // Name of the book
+        char name[100];
 
+        // publication of the book
+        char publication[100];
+    };
 
+    struct book books[3] ;
 
+    for (int i = 0; i < 3; i++)
+    {
+        printf("Enter the name of the book %d: ", i);
+        gets(books[i].name);
+        printf("Enter the publication of the book %d: ", i);
+        gets(books[i].publication);
+        printf("\n");
+    }
 
-# Default values 
+    
+    for (int i = 0; i < 3; i++) 
+    {
+        printf("name of the book %d: %s\n", i, books[i].name);
+        printf("publication of the book %d: %s\n", i, books[i].publication);
+        printf("\n");
+        i++ ;
+    }
+}
+```
+
+#### *using while loop*
+
+```c
+#include<stdio.h>
+
+void main()
+{
+    // A structure <book>
+    struct book {
+
+        // Name of the book
+        char name[100];
+
+        // publication of the book
+        char publication[100];
+    };
+
+    struct book books[3] ;
+
+    int i = 0;
+    while (i < 3)
+    {
+        printf("Enter the name of the book %d: ", i);
+        gets(books[i].name);
+        printf("Enter the publication of the book %d: ", i);
+        gets(books[i].publication);
+        printf("\n");
+
+        i++ ;
+    }
+
+    i = 0;
+    while (i < 3)
+    {
+        printf("name of the book %d: %s\n", i, books[i].name);
+        printf("publication of the book %d: %s\n", i, books[i].publication);
+        printf("\n");
+
+        i++ ;
+    }
+}
+```
+
+#### *using do-while loop*
+
+```c
+#include<stdio.h>
+
+void main()
+{
+    // A structure <book>
+    struct book {
+
+        // Name of the book
+        char name[100];
+
+        // publication of the book
+        char publication[100];
+    };
+
+    struct book books[3] ;
+
+    int i = 0;
+    do {
+        printf("Enter the name of the book %d: ", i);
+        gets(books[i].name);
+        printf("Enter the publication of the book %d: ", i);
+        gets(books[i].publication);
+        printf("\n");
+
+        i++ ;
+    } while (i < 3);
+
+    i = 0;
+    do {
+        printf("name of the book %d: %s\n", i, books[i].name);
+        printf("publication of the book %d: %s\n", i, books[i].publication);
+        printf("\n");
+        i++ ;
+    } while (i < 3);
+}
+```
