@@ -81,4 +81,15 @@ It's possible to have structures within structures, creating a nested or hierarc
 
 
 ## 8. **Memory Allocation:** 
-The memory occupied by a structure is the sum of the memory occupied by its members. **However, there might be padding added by the compiler for alignment purposes.**
+ - All the members of a structure are stored in contiguous or continuous memory locations despite the type of its individual members.
+ - The memory occupied by a structure is the sum of the memory occupied by its members. **However, there might be padding added by the compiler for alignment purposes.**
+
+
+## 9. **Passing Into Functions:**
+ - Structures can also be passed as arguments inside the *user-defined* functions.
+ - We can either pass the individual elements of a structure into function's argument or we can pass the whole structure as well.
+ - We can also pass a pointer to the structure.
+
+## 10. **Pointers To Structures:**
+ - We can also create pointers to structures.
+ - When using pointer, another syntax is used to access the variables, which is ``` <structure-instance> -> element ```
