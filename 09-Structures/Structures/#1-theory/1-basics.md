@@ -594,3 +594,47 @@ void main()
     } while (i < 3);
 }
 ```
+
+## Copying Structure Variables || Structure Assignment
+
+We can also assign a structure variable to another structure variable.
+```c
+#include<stdio.h>
+
+void main()
+{
+    // A structure to store numbers
+    struct numbers {
+        int even_nos;
+        int odd_nos;
+        int prime_nos;
+    };
+
+    struct numbers n1 = {2, 1, 3};
+    struct numbers n2 = n2;
+
+    printf("Structure 1 elements: \n");
+    printf("even no: %d\n", n1.even_nos);
+    printf("odd no: %d\n", n1.odd_nos);
+    printf("prime no: %d\n", n1.prime_nos);
+
+    printf("-----------\n");
+
+    printf("Structure 2 elements: \n");
+    printf("even no: %d\n", n1.even_nos);
+    printf("odd no: %d\n", n1.odd_nos);
+    printf("prime no: %d\n", n1.prime_nos);
+}
+```
+\ >>> Output
+```
+Structure 1 elements: 
+even no: 2
+odd no: 1
+prime no: 3
+-----------
+Structure 2 elements:
+even no: 2
+odd no: 1
+prime no: 3
+```
