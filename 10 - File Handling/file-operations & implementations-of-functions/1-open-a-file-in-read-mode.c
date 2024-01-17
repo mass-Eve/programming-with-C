@@ -1,3 +1,5 @@
+// WAP to open a text file in "read mode" in a C program and close it.
+
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -7,7 +9,7 @@ void main()
     FILE *fp ;
 
     // Let's open the file in reading mode
-    fp = fopen("name.txt", "r");
+    fp = fopen("1-name.txt", "r");
 
     // Lets' check if the file is opened successfully or not.
     if (fp == NULL)
@@ -18,6 +20,8 @@ void main()
     else{
         printf("File opened successfully. Ready for manipulations.....");
     }
+
+    printf("Closing the File.....");
 
     // Let's close the file now.
     fclose(fp);
