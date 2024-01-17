@@ -1,6 +1,6 @@
-* *__Pointer Arithmetics__* refers to the valid arithmetic operations that can be carried out on a pointer.
+## Pointer Arithmetics
 
-* These operations include ~
+*__Pointer Arithmetics__* refers to the valid arithmetic operations that can be carried out on a pointer. These operations include ~
 01. Incrementing a Pointer
 02. Decrementing a Pointer
 03. Addition of an integer to a pointer
@@ -9,7 +9,7 @@
 06. Comparison of pointers of the same type.
 07. Assignment of pointers of the same type.
 
-### 01. Incrementing A Pointer / 03. Addition of an Integer to a Pointer
+### 01. *Incrementing A Pointer / 03. Addition of an Integer to a Pointer*
 
 ```c
 // WAP to traverse through an array one by one element and also print the memory address of that element, all using pointers only. 
@@ -41,7 +41,7 @@ void main(){
 }
 ```
 
-### 02. Decrementing A Pointer / 04. Subtraction of an Integer from a pointer
+### 02. *Decrementing A Pointer / 04. Subtraction of an Integer from a pointer*
 
 ```c
 // WAP to traverse through an array one by one element and also print the memory address of that element, all using pointers only. 
@@ -73,7 +73,7 @@ void main(){
 }
 ```
 
-### 05. Subtracting Two Pointers of the same type.
+### 05. *Subtracting Two Pointers of the same type.*
 
 ```c
 // WAP to subtract two number using there pointers
@@ -100,7 +100,7 @@ void main()
 }
 ```
 
-### 06. Comparison of pointers of the same type / 07. Assignment of pointers of the same type.
+### 06. *Comparison of pointers of the same type / 07. Assignment of pointers of the same type.*
 
 Example 1 -->
 ```c
