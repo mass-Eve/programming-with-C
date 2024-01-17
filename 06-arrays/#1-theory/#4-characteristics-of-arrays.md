@@ -18,13 +18,15 @@
 4. **Homogeneous Data Type:** All elements in an array must be of the same data type. For example, an array of integers can only store integers, and an array of characters can only store characters. 
 
     ```c
-    float prices[4] = {2.5, 1.8, 3.2, 4.0}; // Array of floating-point numbers
+    // Array of floating-point numbers
+    float prices[4] = {2.5, 1.8, 3.2, 4.0}; 
     ```
 
 5. **Initialization:** Arrays can be initialized at the time of declaration. You can provide initial values for the elements within curly braces `{}`.
 
     ```c
-    int values[3] = {5, 10, 15}; // Initializing an array at the time of declaration
+    // Initializing an array at the time of declaration
+    int values[3] = {5, 10, 15}; 
     ```
 
 6. **No Bounds Checking:** 
@@ -34,7 +36,8 @@
 
     ```c
     int numbers[3] = {10, 20, 30};
-    int value = numbers[4]; // Accessing an element outside the bounds of the array (undefined behavior)
+    // Accessing an element outside the bounds of the array ( leads to undefined behavior)
+    int value = numbers[4]; 
     ```
 
 7. **Sizeof Operator:** You can use the `sizeof` operator to determine the size (in bytes) of an array.
