@@ -1,3 +1,5 @@
+# Characteristics Of Arrays
+
 1. **Fixed Size:** Arrays in C have a fixed size, meaning you need to specify the number of elements the array can hold when declaring it. Once the size is set, it cannot be changed during runtime.
 
     ```c

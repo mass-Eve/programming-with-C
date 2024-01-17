@@ -1,4 +1,4 @@
-## Introduction To Arrays
+# Introduction To Multi-Dimensional Arrays
 * An array of arrays is what a multi dimensional array is.
 * Arrays can have any number of dimensions.
 
@@ -19,7 +19,8 @@ int matrix[2][2] = { {1, 1}, {2, 2} };
         [ 2 2 ] 
                   ]
 
-* *Important Point* - While declaring a multi-dimensional array, it is mandatory to mention the number of columns in the declaration phase, and mentioning the number of rows is not a necessary thing.
+* __*Important Point*__ - 
+> While declaring a multi-dimensional array, it is mandatory to mention the number of columns in the declaration phase, and mentioning the number of rows is not a necessary thing.
  Example ~
 ```c
 // rows = 2 (horizontal)
@@ -32,9 +33,9 @@ int arr[2][3] = {1, 2, 3, 4}
 int arr2[][4] = {1, 2, 5, 8, 6, 87};
 ```
 
-* To access the element of an array, we have to specify the index of both rows and columns.
+# To access the element of an array, we have to specify the index of both rows and columns.
 
-### Syntax Of Accesing The Elements Of An Array using printf() statements -->
+## Syntax Of Accesing The Elements Of An Array using printf() statements -->
 ```c
 int matrix[2][2] = { {1, 1}, {2, 2} };
 
@@ -49,7 +50,7 @@ printf("row 1 column 1: %d\n", multi[1][1]);
 2
 ```
 
-### Syntax Of Accesing The Elements Of An Array using for loop -->
+## Syntax Of Accesing The Elements Of An Array *using for loop* -->
 ```c
 // 2D Array
 int matrix[2][2] = { {1, 1}, {2, 2} };
@@ -80,7 +81,7 @@ for (int i = 0; i < 2; i++)
 ```
 
 
-### Syntax Of Accesing The Elements Of An Array using while loop -->
+## Syntax Of Accesing The Elements Of An Array *using while loop* -->
 
 ```c
 
@@ -118,7 +119,7 @@ while (i < 2){
 ```
 
 
-### Syntax Of Accesing The Elements Of An Array using do-while loop -->
+## Syntax Of Accesing The Elements Of An Array using *do-while loop* -->
 
 ```c
 // Representation 1
@@ -154,7 +155,7 @@ do{
 2  2
 ```
 
-### Updating or Assigning Elements in 2D Arrays ~
+## Updating or Assigning Elements in 2D Arrays ~
 
 ```c
 int multi[3][2] =
