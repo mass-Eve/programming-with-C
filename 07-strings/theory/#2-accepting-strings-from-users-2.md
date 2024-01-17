@@ -1,4 +1,4 @@
-### Receiving multi-words string using gets() and puts()
+## Receiving multi-words string using gets() and puts()
 
 * `gets()` and `puts()` are two functions that can help us in doing this. 
 * `gets()` function can input a string of any number of characters and words.

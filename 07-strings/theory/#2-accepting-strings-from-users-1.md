@@ -42,25 +42,27 @@ void main()
 ```
 
 ### No '&' in scanf(), why?
-* As we all know that `scanf()` requires the address of the variable where the value has to be stored. and to do the same, we use '&'. But why no `ampersand` is used while accepting a string from the user using `scanf()` ?
+As we all know that `scanf()` requires the address of the variable where the value has to be stored. and to do the same, we use '&'. But why no `ampersand` is used while accepting a string from the user using `scanf()` ?
 
-* Let's understand this. 
-    * We know that strings are just an array of characters terminated by a `null character`. 
-    * Now in the properties of arrays, we have discussed that Arrays always store the memory address of the first character in their variable. 
-    * And that's why, when the `string-identifier` or the `string-name` is passed in `scanf()`, it actually sees a pointer pointing to the memory address of its first element. 
+Let's understand this. 
+* We know that strings are just an array of characters terminated by a `null character`. 
 
-    * And this eliminates the need of explicitly using the `&`. It will only make things worse. 
-    
-    * But wait what? An array variable will be having array-contents as it's value, then how the array is storing the memory address of the first element inside it as it's variable's value! This is not making any sense! 
+* Now in the properties of arrays, we have discussed that Arrays always store the memory address of the first character in their variable. 
 
-* Let's make some sense of this as well.
-    * first of all, Arrays in C inherently behave like pointers, especially when used as function arguments. 
-    * When you pass the name of an array to a function like `scanf()`, it's treated as a pointer to the first element of the array. 
-    * Contrary to other variables in C, arrays store the memory address of their first element as their value. So, when you pass a string identifier to `scanf()`, it's essentially passing a pointer to the memory location where the string is stored.
+* And that's why, when the `string-identifier` or the `string-name` is passed in `scanf()`, it actually sees a pointer pointing to the memory address of its first element. 
 
-    * So In C, variables that are arrays (or are made to store arrays), become a pointer to the first element of the array, when used as function arguments. So `scanf()` sees `<string-name>` as a pointer to memory, where the `string-name` has occupied its space. 
+* And this eliminates the need of explicitly using the `&`. It will only make things worse. 
 
-* This can become crystal clear after understanding this program ~
+* But wait what? An array variable will be having array-contents as it's value, then how the array is storing the memory address of the first element inside it as it's variable's value! This is not making any sense! 
+
+Let's make some sense of this as well.
+* first of all, Arrays in C inherently behave like pointers, especially when used as function arguments. 
+* When you pass the name of an array to a function like `scanf()`, it's treated as a pointer to the first element of the array. 
+* Contrary to other variables in C, arrays store the memory address of their first element as their value. So, when you pass a string identifier to `scanf()`, it's essentially passing a pointer to the memory location where the string is stored.
+* So In C, variables that are arrays (or are made to store arrays), become a pointer to the first element of the array, when used as function arguments. So `scanf()` sees `<string-name>` as a pointer to memory, where the `string-name` has occupied its space. 
+
+
+This can become crystal clear after understanding this program ~
 ```c
 #include<stdio.h>
 void main()
@@ -75,4 +77,4 @@ void main()
 6422294
 ```
 
-* Clearly, both are giving the same answer.
+Clearly, both are giving the same answer.
