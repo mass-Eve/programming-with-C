@@ -1,6 +1,6 @@
-                                     Introduction To Functions 
+# Introduction To Functions 
 
-### Q. What are functions in C ?
+## Q. What are functions in C ?
 * Functions are defined as the blocks of code that are combined in such a way that they can be executed any number of time without re-writing the whole code, any-where across the program.
 
 * A function is a self-contained block of statements, that performs a coherent task of some kind.
@@ -18,7 +18,7 @@
 * If a C program have to contain only one function, then it should be only `main()`, as the `main()` is the primary and the most necessary need of a C program.
 
 
-#### Q. What is a function Call ?
+## Q. What is a function Call ?
 * A function call is a method of calling a function outside that function anywhere in the program code. 
 
 * The function through which the call to another function is made is called as the **_Calling Function_**, while, the function which is being called by the calling function is called as the **_Called Function_**.
@@ -28,7 +28,7 @@
 * The Execution of a **_return_** statement in the called function returns the control from the called function to the calling function, and possibly also a value to the calling function (, if apllicable).
 
 
-#### Types Of Functions -->
+## Types Of Functions -->
 01. **_Built-in Functions_** ~ 
     * These are the functions which comes pre-defined in C language.   
     * Built-in functions are stored in their respective libraries. 
@@ -39,22 +39,23 @@
 02. **_User-defined Functions_** ~
     * These are created by the user or the programmer itself for simplifying his code, to increase the readability and reusability of the code.
 
-#### Declaring user-defined Functions ~
+## Declaring user-defined Functions ~
 
 ~ Syntax to declare a **_Prototype Function_** -->
-
-    <data-type-of-function> <function-identifier>(<arguments, if any, along with their data-type>);
+```c
+<data-type> <func-name>(<arguments, if any, along with their data-type>);
+```
 
 ~ Syntax to declare a function with proper declaration and definition -
+```c
+<data-type-of-function> <function-identifier>(<arguments, if any, along with their data-type>)
+{
+    // body
+    return <value>; (if needed!)
+}
+```
 
-    <data-type-of-function> <function-identifier>(<arguments, if any, along with their data-type>)
-    {
-        // body
-        // return <value>; (if needed!)
-    }
-
-
-#### Types Of user-defined functions ~
+## Types Of user-defined functions ~
 There can be 4 types of user-defined functions :
 
 01. function with arugment and with return value.
@@ -87,15 +88,15 @@ void main(){
 
 In the code snippet above, (int num1, int num2), which are passed in the function declaration are the *Parameters* for add() function. And the values (5, 6), which are passed in the function's calling are the *Arguments* for the add() function.
 
-* **Note** - 
+*__Note__* - 
 01. Sometimes, parameter are also referred to as *formal arguments*, while the arguments are referred to as *actual arguments*.
 02. The number of parameter, that are allowewd in a function and the arguments passed in that function's call, both should match. Otherwise, ready for an `ERROR`.
 
 03. There's no boundation upon how  many `return` statements can be there in a function. But as soon as a `return` statement is executed, the control will be taken out from that function.
-04. I C, the `return` statement can return only one value at a time.
+04. In C, the `return` statement can return only one value at a time.
 
 
-#### Scope Of Variables
+## Scope Of Variables
 * The variables declared inside the function and the variables declared outside the function, both have different scopes.
 
 * Variables declared outside the function or in the main() function have **_Global Scope_**, which means that they can be accessed anywhere in the program, and if any operation is carried out on them, then it will update the value of that variable (if it got run successfully).
