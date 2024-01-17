@@ -44,7 +44,8 @@ void main(){
 ### 02. *Decrementing A Pointer / 04. Subtraction of an Integer from a pointer*
 
 ```c
-// WAP to traverse through an array one by one element and also print the memory address of that element, all using pointers only. 
+// WAP to traverse through an array one by one element and also print the
+   memory address of that element, all using pointers only.
 
 #include<stdio.h>
 void main(){
@@ -62,10 +63,13 @@ void main(){
         // To print the memory address using the pointer
         printf("array value using pointer: %d\n", *mp);
         
-        // To print the value stored in the array <marks> at the following memory address stored in the pointer.
+        // To print the value stored in the array <marks>
+              at the following memory address stored in the pointer.
         printf("it memory address: %p\n", mp);
 
-        // Since values in an array are stored in continuou memory locations, deccrementing the memory address by 1 can give us the memory address of the next element of the array.
+        // Since values in an array are stored in continuou memory
+              locations, deccrementing the memory address by 1 can
+                give us the memory address of the next element of the array.
         mp--;   
         // or
         // mp = mp - 1;
