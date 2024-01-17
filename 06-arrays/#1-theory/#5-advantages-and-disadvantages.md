@@ -1,4 +1,4 @@
-# Quesn. *Why should I use Arrays? What are the Advantages of using Arrays?*
+## Quesn. *Why should I use Arrays? What are the Advantages of using Arrays?*
 
 1. **Sequential Access:** 
 Arrays provide a convenient way to store and access elements sequentially. This sequential access pattern is efficient for tasks such as iterating through a collection of data or performing operations on each element.
@@ -35,7 +35,7 @@ When passing arrays to functions, you are essentially passing a reference to the
 10. **Standard Library Support:** C provides a set of standard library functions for working with arrays, such as `memcpy`, `memset`, and `qsort`. These functions streamline common array operations and contribute to code reusability.
 
 
-# Quesn. *Why should I avoid using Arrays? What are the Disadvantages of using Arrays?*
+## Quesn. *Why should I avoid using Arrays? What are the Disadvantages of using Arrays?*
 
 1. **Fixed Size:** 
     * The size of an array is fixed at the time of declaration, and it cannot be changed during runtime. 
