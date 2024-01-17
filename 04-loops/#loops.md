@@ -6,7 +6,7 @@
 
 ## Types Of Loops
 
-In C programming languages, there are two types of loops.
+In C programming language, there are two types of loops.
 01. Entry Controlled Loop
 02. Exit Controlled Loop
 
@@ -17,6 +17,8 @@ In C programming, there are three loops in total -->
 * **while loop** and **for loop** are collectively known as **Entry Controlled Loop** !
 
     > Why? Because in these loops, entry in the loop's body is allowed only if the condition is True. That means, condition in these loops is checked first, then the program can enter the loop's body.
+
+---
 
 * where as, a **do-while loop** is also known by **Exit Controlled Loop** !
 
