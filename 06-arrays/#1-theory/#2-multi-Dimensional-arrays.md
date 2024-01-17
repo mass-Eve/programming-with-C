@@ -6,7 +6,7 @@
 * A 2D array is also known as a matrix.
 * To create a 2D array of integer values, we use the following syntax -->
 ```c
-<type> <array-identifier> [no-of-rows][no-of-columns] = { {}, {}, ......, {} }
+<type> <array-identifier> [n-rows][n-columns] = { {}, {}, ......, {} }
 ```
 * Example -
 ```c
