@@ -1,4 +1,4 @@
-### Q. Why should I use Pointers? What are the advantages of using Pointers?
+## Q. Why should I use Pointers? What are the advantages of using Pointers?
 
 * Pointers in C language, provides several advantages to the programmer, making them a powerful and flexible feature of the language. 
 
@@ -36,7 +36,7 @@ Pointers can be used to share and reuse memory locations, reducing redundancy in
 Pointers can be used to efficiently access and manipulate members of structures and unions. This is especially beneficial when dealing with complex data structures.
 
 
-### Q. Why should I avoid use Pointers? What are the disadvantages of using Pointers?
+## Q. Why should I avoid use Pointers? What are the disadvantages of using Pointers?
 
 * While pointers in C provide powerful capabilities to both the programmer and the program, they also come with certain challenges and potential pitfalls, which are important to consider before taking any big step.
 * Here are some reasons why one might want to be cautious or avoid the excessive use of pointers:

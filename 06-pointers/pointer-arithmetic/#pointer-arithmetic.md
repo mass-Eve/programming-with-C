@@ -1,6 +1,6 @@
-* *__Pointer Arithmetics__* refers to the valid arithmetic operations that can be carried out on a pointer.
+## Pointer Arithmetics
 
-* These operations include ~
+*__Pointer Arithmetics__* refers to the valid arithmetic operations that can be carried out on a pointer. These operations include ~
 01. Incrementing a Pointer
 02. Decrementing a Pointer
 03. Addition of an integer to a pointer
@@ -9,7 +9,7 @@
 06. Comparison of pointers of the same type.
 07. Assignment of pointers of the same type.
 
-### 01. Incrementing A Pointer / 03. Addition of an Integer to a Pointer
+### 01. *Incrementing A Pointer / 03. Addition of an Integer to a Pointer*
 
 ```c
 // WAP to traverse through an array one by one element and also print the memory address of that element, all using pointers only. 
@@ -30,10 +30,13 @@ void main(){
         // To print the memory address using the pointer
         printf("it memory address: %p\n", mp);
 
-        // To print the value stored in the array <marks> at the following memory address stored in the pointer.
+        // To print the value stored in the array <marks> 
+        // at the following memory address stored in the pointer.
         printf("array value using pointer: %d\n", *mp);
 
-        // Since values in an array are stored in continuou memory locations, incrementing the memory address by 1 can give us the memory address of the next element of the array.
+        // Since values in an array are stored in continuous
+        // memory locations, incrementing the memory address 
+        // by 1 can give us the memory address of the next element of the array.
         mp++;
         // or
         // mp = mp + 1;
@@ -41,10 +44,11 @@ void main(){
 }
 ```
 
-### 02. Decrementing A Pointer / 04. Subtraction of an Integer from a pointer
+### 02. *Decrementing A Pointer / 04. Subtraction of an Integer from a pointer*
 
 ```c
-// WAP to traverse through an array one by one element and also print the memory address of that element, all using pointers only. 
+// WAP to traverse through an array one by one element and also print the
+   memory address of that element, all using pointers only.
 
 #include<stdio.h>
 void main(){
@@ -62,10 +66,13 @@ void main(){
         // To print the memory address using the pointer
         printf("array value using pointer: %d\n", *mp);
         
-        // To print the value stored in the array <marks> at the following memory address stored in the pointer.
+        // To print the value stored in the array <marks>
+        //  at the following memory address stored in the pointer.
         printf("it memory address: %p\n", mp);
 
-        // Since values in an array are stored in continuou memory locations, deccrementing the memory address by 1 can give us the memory address of the next element of the array.
+        // Since values in an array are stored in continuou memory
+          //  locations, deccrementing the memory address by 1 can
+             // give us the memory address of the next element of the array.
         mp--;   
         // or
         // mp = mp - 1;
@@ -73,7 +80,7 @@ void main(){
 }
 ```
 
-### 05. Subtracting Two Pointers of the same type.
+### 05. *Subtracting Two Pointers of the same type.*
 
 ```c
 // WAP to subtract two number using there pointers
@@ -100,7 +107,7 @@ void main()
 }
 ```
 
-### 06. Comparison of pointers of the same type / 07. Assignment of pointers of the same type.
+### 06. *Comparison of pointers of the same type / 07. Assignment of pointers of the same type.*
 
 Example 1 -->
 ```c

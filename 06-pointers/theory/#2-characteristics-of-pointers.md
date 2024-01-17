@@ -1,4 +1,4 @@
-### Characteristics Of Pointers ~
+## Characteristics Of Pointers ~
 
 Pointers in C have several characteristics that define their behavior and usage. Here are some key characteristics of pointers:
 

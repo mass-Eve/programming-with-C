@@ -1,6 +1,5 @@
-                    Introduction To Pointers
+# Introduction To Pointers
 
-### Introduction
 * A pointer is a variable that stores the memory address of another variable, functions, or even another pointer as well.
 
 * A pointer is defined as a derived data type that can store the address of other C variables or a memory location. We can access and manipulate the data stored in that memory location using pointers.
@@ -16,16 +15,17 @@
 ### Indirection Operator In C ( * )
 The indirection operator in C is represented by the asterisk ' __*__ ' symbol. It is also commonly known as the dereference operator. The indirection operator is used to access the value stored at the address held by a pointer. In other words, it allows you to retrieve the data located in the memory location pointed to by a pointer.
 
-### Syntax Of Declaring Pointers
+## Syntax Of Declaring Pointers
 
-    <data-type-of-pointer> * <identifier-name> ;
+```c
+<data-type-of-pointer> * <identifier-name> ;
 
-    // white space doesn't really matters
-    <data-type-of-pointer> *<identifier-name> ;
-    <data-type-of-pointer>* <identifier-name> ;
+// white space doesn't really matters
+<data-type-of-pointer> *<identifier-name> ;
+<data-type-of-pointer>* <identifier-name> ;
 
-    All of them will work exactly the same.
-
+All of them will work exactly the same.
+```
 
 ```c
 // A variable marks, storing the marks of a student.
@@ -34,8 +34,8 @@ int marks;
 int *marks_pointer;
 ```
 
-### Assigning Values to a Pointer
-* Pointer initialization is the process where we assign some initial value to the pointer variable. We generally use the ( & ) addressof operator to get the memory address of a variable and then store it in the pointer variable.
+## Assigning Values to a Pointer
+Pointer initialization is the process where we assign some initial value to the pointer variable. We generally use the ( & ) addressof operator to get the memory address of a variable and then store it in the pointer variable.
 
       <data-type-of-pointer> * <identifier-name> = &<variable-identifier> ;
 
@@ -52,7 +52,7 @@ int *roll_pointer;
 roll_pointer = &roll ;
 ```
 
-* *Note* - When we write <type> *<ptr-name>, we mean that <ptr-name> will store the memory address number of <data-type>. For example - if we write `int *ptr`, this means that the pointer `ptr` will be storing the memory address of a `integer type` value. If we write `char *ptr`, this means that the pointer `ptr` is going to store the memory address of a `character type` value.
+*__Note__* - When we write <type> *<ptr-name>, we mean that <ptr-name> will store the memory address number of <data-type>. For example - if we write `int *ptr`, this means that the pointer `ptr` will be storing the memory address of a `integer type` value. If we write `char *ptr`, this means that the pointer `ptr` is going to store the memory address of a `character type` value.
 
 ### Accessing The Values Inside A Pointer -->
 *__%p__* format specifier is used to access the value inside a pointer, which is basically the address of the variable.
