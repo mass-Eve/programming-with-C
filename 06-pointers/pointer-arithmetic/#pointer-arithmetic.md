@@ -67,12 +67,21 @@ void main(){
         printf("array value using pointer: %d\n", *mp);
         
         // To print the value stored in the array <marks>
+<<<<<<< HEAD
         //  at the following memory address stored in the pointer.
         printf("it memory address: %p\n", mp);
 
         // Since values in an array are stored in continuou memory
           //  locations, deccrementing the memory address by 1 can
              // give us the memory address of the next element of the array.
+=======
+              at the following memory address stored in the pointer.
+        printf("it memory address: %p\n", mp);
+
+        // Since values in an array are stored in continuou memory
+              locations, deccrementing the memory address by 1 can
+                give us the memory address of the next element of the array.
+>>>>>>> 9eb6454b6e5fb943fd5a048a6691024107461670
         mp--;   
         // or
         // mp = mp - 1;
