@@ -36,7 +36,8 @@
 
     ```c
     int numbers[3] = {10, 20, 30};
-    // Accessing an element outside the bounds of the array ( leads to undefined behavior)
+    // Accessing an element outside the bounds of the array
+        // ( leads to undefined behavior )
     int value = numbers[4]; 
     ```
 
