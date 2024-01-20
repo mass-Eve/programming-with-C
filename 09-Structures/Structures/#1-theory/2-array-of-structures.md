@@ -47,7 +47,7 @@ In this way, there are `book0`, `book1`, `book2`, `book3`, `book4` ; inside the 
 
 *It is best done using looping statements, but we can always use the normal method as well!!*
 
-## *accessing using for loop*
+## *using for loop*
 
 ```c
 #include<stdio.h>
@@ -80,7 +80,7 @@ void main()
 }
 ```
 
-## *accessing using while loop*
+## *using while loop*
 
 ```c
 #include<stdio.h>

@@ -1,8 +1,8 @@
 # Characteristics Of Structures
 
-In C programming, structures are *user-defined data type* that are used to group together variables of different data types under a single name. 
+In C programming, structures are the *user-defined data type* that are used to group together variables of different data types under a single name. 
 
-Here are some key characteristics of structures in C:
+*Here are some key characteristics of structures in C :-*
 
 ## 1. **User-Defined Data Type:** 
  - Structures allows the programmer to define their own data types by grouping variables of different types. 
@@ -65,19 +65,20 @@ struct Person person2 = {"Jane", 30, 5.6};
 ## 7. **Nested Structures:** 
 It's possible to have structures within structures, creating a nested or hierarchical structure.
 
-    ```c
-    struct Address {
-        char street[50];
-        char city[50];
-        int zip_code;
-    };
+```c
+struct Address {
+    char street[50];
+    char city[50];
+    int zip_code;
+};
 
-    struct Employee {
-        char name[50];
-        int emp_id;
-        struct Address address;
-    };
-    ```
+struct Employee {
+    char name[50];
+    int emp_id;
+    struct Address address;
+};
+
+```
 
 
 ## 8. **Memory Allocation:** 
@@ -89,6 +90,7 @@ It's possible to have structures within structures, creating a nested or hierarc
  - Structures can also be passed as arguments inside the *user-defined* functions.
  - We can either pass the individual elements of a structure into function's argument or we can pass the whole structure as well.
  - We can also pass a pointer to the structure.
+
 
 ## 10. **Pointers To Structures:**
  - We can also create pointers to structures.
