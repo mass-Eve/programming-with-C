@@ -5,9 +5,11 @@
 ## Two Dimensional Arrays or 2D Arrays  
 * A 2D array is also known as a matrix.
 * To create a 2D array of integer values, we use the following syntax -->
+
 ```c
 <type> <array-identifier> [n-rows][n-columns] = { {}, {}, ......, {} }
 ```
+
 * Example -
 ```c
 int matrix[2][2] = { {1, 1}, {2, 2} };
@@ -19,9 +21,9 @@ int matrix[2][2] = { {1, 1}, {2, 2} };
         [ 2 2 ] 
                   ]
 
-* __*Important Point*__ - 
+__*Important Point*__ - 
 > While declaring a multi-dimensional array, it is mandatory to mention the number of columns in the declaration phase, and mentioning the number of rows is not a necessary thing.
- Example ~
+
 ```c
 // rows = 2 (horizontal)
 // columns = 3 (vertical)
@@ -33,7 +35,8 @@ int arr[2][3] = {1, 2, 3, 4}
 int arr2[][4] = {1, 2, 5, 8, 6, 87};
 ```
 
-# To access the element of an array, we have to specify the index of both rows and columns.
+# Accessing The Elements Of An Array
+*To access the element of an array, we have to specify the index of both rows and columns.* 
 
 ## Syntax Of Accesing The Elements Of An Array using printf() statements -->
 ```c

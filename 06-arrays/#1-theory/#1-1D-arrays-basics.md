@@ -62,7 +62,7 @@ char colour2[] = "Green";
 * All the elements inside an array are indexed from 0 to ((length-of-array) - 1).
 * Syntax ~
 ```c
-array_name[index-position]
+array_name[index-position] ;
 ```
 
 ## Accessing The elements Of An Array Using simple printf() statements.
@@ -112,7 +112,7 @@ do{
 
 ```c
 // It is done by accessing those positions using the index values
-array_name[index-position] = <value-to-be-assigned>
+array_name[index-position] = <value-to-be-assigned> ;
 ```
 
 ```c
