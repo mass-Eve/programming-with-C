@@ -1,4 +1,4 @@
-## Characteristics Of Recursion In C
+# Characteristics Of Recursion In C
 
 1. **Base Case:**
    - A recursive function must have a base case or termination condition that indicates that this is the end of recursion. 

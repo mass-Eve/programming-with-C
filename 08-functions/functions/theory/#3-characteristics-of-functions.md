@@ -1,4 +1,4 @@
-## Characteristics Of Functions In C
+# Characteristics Of Functions In C
 
 1. **Modularity:**
    - Functions help in dividing a large program into smaller, manageable modules.

@@ -63,12 +63,12 @@ There can be 4 types of user-defined functions :
 03. function without argument and with return value.
 04. function without argument and without return value.
 
-#### Arguemnts & Parameters Inside The Function Parenthesis
+### ~ Arguemnts & Parameters Inside The Function Parenthesis
 
 * **_Arguments_** are the values that are passed in the function call.
 * **_Parameters_** are the values that are defined in the function's declaration. 
 
-Basicaly, Parameters tell the function what kind of values to receive and, Arguments are the values that are passed by the user or the programmer and tell the function (in which they are passed) to placehold them in their respective variables or placeholders.
+Basicaly, *Parameters* tell the function what kind of values to receive and, *Arguments* are the values that are passed by the user or the programmer and tell the function (in which they are passed) to placehold them in their respective variables or placeholders.
 
 * For example -  
 
@@ -85,8 +85,9 @@ void main(){
 // Output 
 >>> 11
 ```
-
+```
 In the code snippet above, (int num1, int num2), which are passed in the function declaration are the *Parameters* for add() function. And the values (5, 6), which are passed in the function's calling are the *Arguments* for the add() function.
+```
 
 *__Note__* - 
 01. Sometimes, parameter are also referred to as *formal arguments*, while the arguments are referred to as *actual arguments*.
