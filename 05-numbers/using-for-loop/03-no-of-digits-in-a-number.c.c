@@ -1,3 +1,7 @@
+// WAP to find the total number of digits in a number.
+// if num = 45
+//    digits = 2
+
 #include<stdio.h>
 #include<conio.h>
 
