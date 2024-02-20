@@ -1,5 +1,0 @@
-~Data being written using append mode
-Black
-White
-Green
-Red
