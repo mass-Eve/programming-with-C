@@ -1,10 +1,6 @@
-# Dynamic Memory Allocation In C
+# Memory Allocation In C 
 
-- It is a method of allocating memory during runtime.
-- It provides good memory management.
-
-## Memory Allocation In C
-- *The memory assigned to a program in a typical architecture can be broken down into four segments.*
+*The memory assigned to a program in a typical architecture can be broken down into four segments.*
 - They are :
     01. ***Code :*** Also known as *Text Segment*. Here all of our code is saved.
     02. ***Static/Global Variables :*** 
@@ -16,8 +12,10 @@
 
     (***Note - 03 and 04 discussed in detail***)
 
-### Memory Layout
-Lets suppose we have a program like this ~
+## Static Memory Allocation In C (with Stack)
+
+*Lets suppose we have a program like this ~*
+
 ```c
 #include<stdio.h>
 
@@ -61,3 +59,92 @@ Now the value of number is 6
         - When the execution of this function is completed, it will pop out the stack-frame created for it. And will return the control to *`incrementFunc(int)`* function.
         - And when this *`incrementFunc(int)`* function is completed with its execution and has returned the value *successfully*, the compiler will pop out the stack-frame created for this function *`incrementFunc(int)`* also, and will return the control to *`main()`* function.
     - Now this cycle is repeated until all the statements are executed.
+
+### Stack Overflow :
+- C compiler allocates some space for the stack part of the memory.
+- When this alloted space or memory is exhausted (or all used up) due to some reason, the situation is known as *stack overflow*.
+- *For example* - A recursive function with no base condition will run infinitely and will cause stack overflow as everytime something is getting pushed inside the stack space but nothing is getting removed (or popped).
+
+-----
+
+## Dyanmic Memory Allocation (with Heap)
+- There are many limitations of using Stack (or static memory allocation). We can resolve them by utilising the concept of Dynamic Memory Allocation.
+- Dynamic Memory Allocation is a concept using which we can change or manipulate the size taken by a data structure during the runtime of the program, unlike the compile time methodology where the size of a data structure is fixed.
+- In dynamic memory allocation, the memory is allocated in the heap segment of the memory.
+- We can create a pointer in our *`main()`* function which will point to a memory block in *heap*.
+- We have 4 functions in total which helps in allocating memory dynamically. They are - 
+```c
+malloc()
+calloc()
+realloc()
+free()
+```
+
+- And to use these functions, we have to import the standard library in our program
+```c
+#include<stdlib.h>
+```
+
+### *malloc() or Memory Allocation Function*
+- It reserves a block of memory with the given amount of bytes
+- It returns a *`VOID POINTER`* to the allocated space. Therefore, the *`VOID POINTER`* needs to be casted to the appropriate type as per the requirements.
+- However, if the space is insufficient, allocation of memory fails and it return a *`NULL POINTER`* .
+- All the values at allocated memory are initialised to garbage values.
+- The syntax of using `malloc()` is ~
+```c
+<data-type> *<ptr-name>;
+<ptr-name> = (<ptr-type*>) malloc(<size-in-bytes>);
+```
+- ***For example :***
+```c`
+int n;
+int *ptr;
+ptr = (int*) malloc(n*sizeof(int))
+```
+
+----
+
+### *calloc() or Contiguous Allocation Function*
+- It reserves ***n*** blocks of memory with the given amount of bytes
+- It returns a *`VOID POINTER`* to the allocated space. Therefore, the *`VOID POINTER`* needs to be casted to the appropriate type as per the requirements.
+- However, if the space is insufficient, allocation of memory fails and it return a *`NULL POINTER`* .
+- All the values at allocated memory are initialised to 0.
+- The syntax of using `malloc()` is ~
+```c
+<data-type> *<ptr-name>;
+<ptr-name> = (<ptr-type*>) calloc(n, <size-in-bytes>);
+```
+- ***For example :***
+```c
+// how many blocks do you want
+int n;
+
+// what must be the size of each block
+int *ptr;
+
+ptr = (int*) calloc(n, sizeof(int))
+```
+
+-----
+
+### *realloc() or Reallocation Function*
+- If at any point, the size of the previously allocated memory becomes insuffiecient and you want to reallocate memory with more size, we make use of `realloc()` function.
+- Syntax Of Usage ~
+```c
+<data-type> *<ptr-name>;
+<ptr-name> = (<ptr-type*>) realloc(<ptr-name>, <new-size-in-bytes>);
+```
+
+- ***For example :***
+```c
+
+```
+
+-----
+
+### *free() function*
+- If the dynamically allocated memory is of no use anymore, we can free it using this function.
+- Syntax ~
+```c
+free(<ptr-name>);
+```
