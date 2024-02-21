@@ -132,3 +132,56 @@ void main()
     }
 }
 ```
+
+----
+
+
+### *calloc() or Contiguous Allocation Function*
+- It reserves ***n*** blocks of memory with the given amount of bytes
+- It returns a *`VOID POINTER`* to the allocated space. Therefore, the *`VOID POINTER`* needs to be casted to the appropriate type as per the requirements.
+- However, if the space is insufficient, allocation of memory fails and it return a *`NULL POINTER`* .
+- All the values at allocated memory are initialised to 0.
+
+- The syntax of using `malloc()` is ~
+```c
+<data-type> *<ptr-name>;
+<ptr-name> = (<ptr-type*>) calloc(n, <size-in-bytes>);
+```
+
+- ***For example :***
+```c
+#include<stdio.h>
+
+// To access function that will help us in allocating the memory dynamically
+#include<stdlib.h>
+
+void main()
+{
+    int n;
+    printf("Enter the number of elements : ");
+    scanf("%d", &n);
+
+    // Declaring a dynamic array using calloc()
+    int *dynamic_array;
+    dynamic_array = (int *) calloc(n, sizeof(int));
+
+    // taking elements from the user
+    printf("\n");
+    for (int i = 0; i < n; i++)
+    {
+        printf("Enter the element at pos %d: ", i);
+        scanf("%d", &dynamic_array[i]);
+        printf("\n");
+    }
+
+    // printing the elements
+    printf("\n");
+    for (int i = 0; i < n; i++)
+    {
+        printf("The element at pos %d is: %d", i, dynamic_array[i]);
+        printf("\n");
+    }
+}
+```
+
+***Note*** - *use calloc() to declare a dynamic array only when you want to initialise all the elements with 0, otherwise it is a overhead for the compiler to declare a array and initialise all of its elements as 0.*
