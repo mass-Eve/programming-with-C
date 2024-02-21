@@ -185,3 +185,76 @@ void main()
 ```
 
 ***Note*** - *use calloc() to declare a dynamic array only when you want to initialise all the elements with 0, otherwise it is a overhead for the compiler to declare a array and initialise all of its elements as 0.*
+
+-----
+
+### *realloc() or Reallocation Function*
+- If at any point, the size of the previously allocated memory becomes insuffiecient and you want to reallocate memory with more size, we make use of `realloc()` function.
+
+- Syntax Of Usage ~
+```c
+<data-type> *<ptr-name>;
+<ptr-name> = (<ptr-type*>) realloc(<ptr-name>, <new-size-in-bytes>);
+```
+
+- ***For example :***
+```c
+#include<stdio.h>
+
+// To access function that will help us in allocating the memory dynamically
+#include<stdlib.h>
+
+void main()
+{
+    int n;
+    printf("Enter the number of elements : ");
+    scanf("%d", &n);
+
+    // Declaring a dynamic array using calloc()
+    int *dynamic_array;
+    dynamic_array = (int *) calloc(n, sizeof(int));
+
+    // taking elements from the user
+    printf("\n");
+    for (int i = 0; i < n; i++)
+    {
+        printf("Enter the element at pos %d: ", i);
+        scanf("%d", &dynamic_array[i]);
+        printf("\n");
+    }
+
+    // printing the elements
+    printf("The size of this dynamically allocated array is: %d", n);
+    printf("\n");
+    for (int i = 0; i < n; i++)
+    {
+        printf("The element at pos %d is: %d", i, dynamic_array[i]);
+        printf("\n");
+    }
+
+    // Taking the new size from the user
+    printf("Enter the new size to allocate the array with: ");
+    scanf("%d", &n);
+
+    // realocating the array using realloc() function
+    dynamic_array = (int *) realloc(dynamic_array, n*sizeof(int));
+
+    // Again taking elements from the user
+    printf("\n");
+    for (int i = 0; i < n; i++)
+    {
+        printf("Enter the element at pos %d: ", i);
+        scanf("%d", &dynamic_array[i]);
+        printf("\n");
+    }
+
+    // printing the new elements
+    printf("The size of this dynamically allocated array is: %d", n);
+    printf("\n");
+    for (int i = 0; i < n; i++)
+    {
+        printf("The element at pos %d is: %d", i, dynamic_array[i]);
+        printf("\n");
+    }
+}
+```
