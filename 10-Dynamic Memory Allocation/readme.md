@@ -90,61 +90,45 @@ free()
 - It returns a *`VOID POINTER`* to the allocated space. Therefore, the *`VOID POINTER`* needs to be casted to the appropriate type as per the requirements.
 - However, if the space is insufficient, allocation of memory fails and it return a *`NULL POINTER`* .
 - All the values at allocated memory are initialised to garbage values.
+
 - The syntax of using `malloc()` is ~
 ```c
 <data-type> *<ptr-name>;
 <ptr-name> = (<ptr-type*>) malloc(<size-in-bytes>);
 ```
-- ***For example :***
-```c`
-int n;
-int *ptr;
-ptr = (int*) malloc(n*sizeof(int))
-```
-
-----
-
-### *calloc() or Contiguous Allocation Function*
-- It reserves ***n*** blocks of memory with the given amount of bytes
-- It returns a *`VOID POINTER`* to the allocated space. Therefore, the *`VOID POINTER`* needs to be casted to the appropriate type as per the requirements.
-- However, if the space is insufficient, allocation of memory fails and it return a *`NULL POINTER`* .
-- All the values at allocated memory are initialised to 0.
-- The syntax of using `malloc()` is ~
-```c
-<data-type> *<ptr-name>;
-<ptr-name> = (<ptr-type*>) calloc(n, <size-in-bytes>);
-```
-- ***For example :***
-```c
-// how many blocks do you want
-int n;
-
-// what must be the size of each block
-int *ptr;
-
-ptr = (int*) calloc(n, sizeof(int))
-```
-
------
-
-### *realloc() or Reallocation Function*
-- If at any point, the size of the previously allocated memory becomes insuffiecient and you want to reallocate memory with more size, we make use of `realloc()` function.
-- Syntax Of Usage ~
-```c
-<data-type> *<ptr-name>;
-<ptr-name> = (<ptr-type*>) realloc(<ptr-name>, <new-size-in-bytes>);
-```
 
 - ***For example :***
 ```c
+#include<stdio.h>
 
-```
+// To access function that will help us in allocating the memory dynamically
+#include<stdlib.h>
 
------
+void main()
+{
+    int n;
+    printf("Enter the number of elements : ");
+    scanf("%d", &n);
 
-### *free() function*
-- If the dynamically allocated memory is of no use anymore, we can free it using this function.
-- Syntax ~
-```c
-free(<ptr-name>);
+    // Declaring a dynamic array using malloc()
+    int *dynamic_array;
+    dynamic_array = (int *) malloc(n*sizeof(int));
+
+    // taking elements from the user
+    printf("\n");
+    for (int i = 0; i < n; i++)
+    {
+        printf("Enter the element at pos %d: ", i);
+        scanf("%d", &dynamic_array[i]);
+        printf("\n");
+    }
+
+    // printing the elements
+    printf("\n");
+    for (int i = 0; i < n; i++)
+    {
+        printf("The element at pos %d is: %d", i, dynamic_array[i]);
+        printf("\n");
+    }
+}
 ```
